@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+
+/* styles.module.css */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0.5rem;
+  /* Set the width of the scrollbar */
+}
+
+.custom-image {
+  width: 128%;
+}
+
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Set the background color of the scrollbar thumb to transparent */
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.scroll-duration-500ms {
+  scroll-behavior: smooth;
+  --scroll-duration: 0.5s;
+}
+
+.scroll-duration-1000ms {
+  scroll-behavior: smooth;
+  --scroll-duration: 1s;
+}
+
+.active {
+  border-bottom: 2px solid #4F46E5;
+}
+
+.bg-linear-gradient {
+  background: rgb(209, 209, 250);
+  background: linear-gradient(90deg, rgb(210, 210, 248) 0%, rgb(226, 226, 248) 52%, rgba(253, 253, 253, 1) 52%);
+}
