@@ -1,7 +1,7 @@
 "use client";
 
 import { Link as ScrollLink } from "react-scroll";
-import { useRef, useState } from "react"; // Import useRef and useState hooks
+import { useRef, useState } from "react";
 
 import Image from "next/image";
 import Education from "@/components/Education/page";
@@ -9,19 +9,19 @@ import Experience from "@/components/Experience/page";
 import Skills from "@/components/Skills/page";
 
 const Page = () => {
-    const mainContentRef = useRef(null); // Create a ref for the main content section
-    const [activeLink, setActiveLink] = useState(null); // State to track active link
+    const mainContentRef = useRef(null);
+    const [activeLink, setActiveLink] = useState(null);
 
     return (
         <div id="Resume">
             <section className="text-gray-400 body-font mt-40 ">
-                <div className=" lg:flex-grow lg:pl-24  lg:mx-20  md:pt-5 flex flex-col md:text-left items-center text-center items-center justify-center">
+                <div className="lg:flex-grow lg:pl-24 lg:mx-20 md:pt-5 flex flex-col md:text-left items-center text-center items-center justify-center">
                     <div className="mb-4">
                         <h1 className="title-font sm:text-5xl text-3xl font-extrabold text-gray-800">Qualifications and Experience
                         </h1>
                         <hr className="w-48 h-1 mx-auto my-2 bg-indigo-300 border-0 rounded md:my-1 dark:bg-indigo-300"></hr>
                     </div>
-                    <p className=" text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+                    <p className="text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
                         Discover my educational background and professional journey, highlighting my skills and expertise.
                     </p>
                 </div>
@@ -31,7 +31,8 @@ const Page = () => {
                         <div className="text-lg py-10 font-medium text-center text-gray-500 dark:text-gray-400">
                             <ul className="flex-wrap -mb-px">
                                 <li className="mb-2">
-                                    <ScrollLink to="Education"
+                                    <ScrollLink
+                                        to="Education"
                                         spy={true}
                                         containerId="mainContent"
                                         smooth={true}
@@ -96,4 +97,3 @@ const Page = () => {
 };
 
 export default Page;
-

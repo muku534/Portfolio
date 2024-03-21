@@ -7,7 +7,6 @@ import About from "@/app/About/page";
 import Resume from "@/app/Resume/page"
 import Projects from "@/app/Projects/page"
 import Contact from "@/app/Contact/page"
-import downarrow from "../../../public/assets/down-arrow.png";
 import downArrow from "../../../public/assets/down-arrow.GIF"
 
 export default function Home() {
