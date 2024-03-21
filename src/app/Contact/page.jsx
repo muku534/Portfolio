@@ -16,7 +16,7 @@ const page = () => {
                         <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                             <div className="lg:w-1/2 px-6">
                                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">Introduction</h2>
-                                <p className="mt-1">As a junior React Native developer and MCA student, I'm passionate about building innovative mobile applications and learning new technologies. Let's collaborate and create something awesome together!</p>
+                                <p className="mt-1">As a junior React Native developer and MCA student, I&apos;m passionate about building innovative mobile applications and learning new technologies. Let&apos;s collaborate and create something awesome together!</p>
                                 <ScrollLink
                                     to="About"
                                     spy={true}

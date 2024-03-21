@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 
-const page = () => {
+const BottomNavigation = () => {
 
     const [isMediumOrSmaller, setIsMediumOrSmaller] = useState(false);
 
@@ -112,4 +112,4 @@ const page = () => {
     )
 }
 
-export default page
+export default BottomNavigation

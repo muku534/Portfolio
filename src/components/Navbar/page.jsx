@@ -4,7 +4,7 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const page = () => {
+const Navbar = () => {
 
     const [scrolled, setScrolled] = useState(false);
 
@@ -125,4 +125,5 @@ const page = () => {
     );
 };
 
-export default page;
+export default Navbar;
+
