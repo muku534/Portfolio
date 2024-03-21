@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <div className="flex w-full mt-20 p-20 justify-center items-center  bg-gradient-to-r from-indigo-100 to-indigo-100" >
                 <div className="text-center">
-                    <p className="mt-2 mb-5 text-lg font-extrabold text-gray-900 tracking-tight sm:text-lg md:text-2xl lg:text-4xl dark:text-gray-400">I'm Available for freelancing</p>
+                    <p className="mt-2 mb-5 text-lg font-extrabold text-gray-900 tracking-tight sm:text-lg md:text-2xl lg:text-4xl dark:text-gray-400">I&apos;m Available for freelancing</p>
                     <h1 className="text-lg font-extrabold leading-none tracking-tight text-blue-700  dark:text-white">A small river named Duden flows by their place and supplies it with the necessary regelialia.</h1>
                     <ScrollLink
                         to="Contact"
