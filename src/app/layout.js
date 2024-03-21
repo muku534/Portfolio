@@ -9,6 +9,7 @@ import Footer from '@/components/Footer/page'
 import Head from 'next/head';
 import Link from "next/link";
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
