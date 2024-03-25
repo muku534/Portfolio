@@ -25,7 +25,7 @@ const Page = () => {
                         Discover my educational background and professional journey, highlighting my skills and expertise.
                     </p>
                 </div>
-                <div className="flex flex-col md:flex-row justify-center h-screen lg:mt-10 md:mt-24 mt-10 ml-24 md:ml-10 lg:ml-24 lg:pl-24">
+                <div className="flex flex-col md:flex-row justify-center h-screen lg:mt-10 md:mt-24 mt-10 ml-5 md:ml-10 lg:ml-20 lg:pl-20 lg:mr-20 lg:pr-20">
                     {/* Sidebar */}
                     <div className="hidden lg:flex w-40 lg:ml-12">
                         <div className="text-lg py-10 font-medium text-center text-gray-500 dark:text-gray-400">

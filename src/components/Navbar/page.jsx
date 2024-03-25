@@ -4,24 +4,24 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ isMobileOrTabletDevice, scrolled }) => {
 
-    const [scrolled, setScrolled] = useState(false);
+    // const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            // Check if the user has scrolled more than 20 pixels from the top
-            setScrolled(window.scrollY > 250);
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         // Check if the user has scrolled more than 20 pixels from the top
+    //         setScrolled(window.scrollY > 250);
+    //     };
 
-        // Add event listener for the "scroll" event
-        window.addEventListener("scroll", handleScroll);
+    //     // Add event listener for the "scroll" event
+    //     window.addEventListener("scroll", handleScroll);
 
-        // Clean up the event listener when the component unmounts
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    //     // Clean up the event listener when the component unmounts
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
 
     return (
         <nav className={`hidden lg:flex fixed w-full z-20 top-0 left-0 transition-all ${scrolled ? "bg-white shadow-md" : "bg-transparent"
@@ -61,7 +61,7 @@ const Navbar = () => {
                                 to="About"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={isMobileOrTabletDevice && -70}
                                 activeClass="active"
                                 duration={500} // Animation duration in milliseconds
                                 className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-800 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -74,7 +74,7 @@ const Navbar = () => {
                                 to="Resume"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={isMobileOrTabletDevice && -70}
                                 duration={500}
                                 className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-800 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
 
@@ -87,7 +87,7 @@ const Navbar = () => {
                                 to="Projects"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={isMobileOrTabletDevice && -70}
                                 duration={500}
                                 className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-800 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
 
@@ -101,6 +101,7 @@ const Navbar = () => {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
+                                // offset={isMobileOrTabletDevice && -70}
                                 className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-800 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Contact

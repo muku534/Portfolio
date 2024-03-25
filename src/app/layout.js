@@ -14,6 +14,22 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   const [isMobileOrTabletDevice, setIsMobileOrTabletDevice] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the user has scrolled more than 20 pixels from the top
+      setScrolled(window.scrollY > 250);
+    };
+
+    // Add event listener for the "scroll" event
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Function to check if the user is on a mobile or tablet device
   const checkDeviceType = () => {
@@ -27,7 +43,12 @@ export default function RootLayout({ children }) {
 
   useEffect(() => {
     checkDeviceType();
+    window.addEventListener('resize', checkDeviceType); // Listen for resize events
+    return () => {
+      window.removeEventListener('resize', checkDeviceType); // Cleanup the event listener
+    };
   }, []);
+
 
 
   return (
@@ -36,9 +57,9 @@ export default function RootLayout({ children }) {
         <Link rel='icon' href='/assets/favicon.png' />
       </Head>
       <body className={inter.className}>
-        {isMobileOrTabletDevice ? null : <Navbar />} {/* Render Navbar only if not on a mobile or tablet device */}
+        {!isMobileOrTabletDevice && <Navbar scrolled={scrolled} isMobileOrTabletDevice={!isMobileOrTabletDevice} />}
         {children}
-        {isMobileOrTabletDevice ? <BottomNavigation /> : null} {/* Render BottomNavigation only if on a mobile or tablet device */}
+        {isMobileOrTabletDevice && <BottomNavigation />}
         <Footer />
       </body>
     </html>

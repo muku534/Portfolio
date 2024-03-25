@@ -1,6 +1,6 @@
 "use client";
 
-import Home from "@/app/Home/page"
+import Home from "@/components/Home/page"
 
 export default function home() {
   return (

@@ -6,35 +6,37 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const BottomNavigation = () => {
 
-    const [isMediumOrSmaller, setIsMediumOrSmaller] = useState(false);
+    // const [isMediumOrSmaller, setIsMediumOrSmaller] = useState(false);
 
-    useEffect(() => {
-        // Function to handle resizing
-        const handleResize = () => {
-            setIsMediumOrSmaller(window.innerWidth <= 768); // Adjust the breakpoint as needed
-        };
+    // useEffect(() => {
+    //     // Function to handle resizing
+    //     const handleResize = () => {
+    //         setIsMediumOrSmaller(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    //     };
 
-        // Call handleResize when the component mounts
-        handleResize();
+    //     // Call handleResize when the component mounts
+    //     handleResize();
 
-        // Add event listener for window resize
-        window.addEventListener("resize", handleResize);
+    //     // Add event listener for window resize
+    //     window.addEventListener("resize", handleResize);
 
-        // Remove event listener when component unmounts
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+    //     // Remove event listener when component unmounts
+    //     return () => {
+    //         window.removeEventListener("resize", handleResize);
+    //     };
+    // }, []);
     return (
 
-        <div className="fixed z-50 w-full max-w-lg bottom-1 left-1/2 transform -translate-x-1/2 bg-gray-100 border border-gray-200 rounded-full shadow-md" style={{ display: isMediumOrSmaller ? 'block' : 'none' }}>
+        <div className="fixed z-50 w-full max-w-lg bottom-1 left-1/2 transform -translate-x-1/2 bg-gray-100 border border-gray-200 rounded-full shadow-md"
+        // style={{ display: isMediumOrSmaller ? 'block' : 'none' }}
+        >
             <div className="grid h-full max-w-lg grid-cols-5 gap-2 mx-auto">
                 <ScrollLink
                     to="Home"
                     spy={true}
                     smooth={true}
                     duration={500}
-                    aria-current="page"
+                    // aria-current="page"
                     // activeclassName="active"
                     style={{ textDecoration: "none" }}
                     className="flex items-center cursor-pointer">
@@ -50,7 +52,8 @@ const BottomNavigation = () => {
                 <ScrollLink to="About"
                     spy={true}
                     smooth={true}
-                    duration={500} className="flex items-center cursor-pointer">
+                    duration={500}
+                    className="flex items-center cursor-pointer">
                     <button data-tooltip-target="tooltip-wallet" type="button" className="inline-flex flex-col items-center justify-center px-5 ">
                         <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H15.8C16.9201 21 17.4802 21 17.908 20.782C18.2843 20.5903 18.5903 20.2843 18.782 19.908C19 19.4802 19 18.9201 19 17.8V9M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M8.12695 21C8.571 19.2748 10.1371 18 12.0009 18C13.8648 18 15.4309 19.2748 15.8749 21M13 14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14C11 13.4477 11.4477 13 12 13C12.5523 13 13 13.4477 13 14Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
