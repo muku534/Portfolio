@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
         {!isMobileOrTabletDevice && <Navbar scrolled={scrolled} isMobileOrTabletDevice={!isMobileOrTabletDevice} />}
         {children}
         {isMobileOrTabletDevice && <BottomNavigation />}
-        <Footer />
+        <Footer isMobileOrTabletDevice={isMobileOrTabletDevice} />
       </body>
     </html>
   )

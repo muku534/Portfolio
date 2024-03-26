@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,27 +9,34 @@ import Resume from "@/components/Resume/page"
 import Projects from "@/components/Projects/page"
 import Contact from "@/components/Contact/page"
 import downArrow from "../../../public/assets/down-arrow.gif";
-import Typist from 'react-typist';
-
+import Typewriter from 'typewriter-effect'; // Importing from 'typewriter-effect'
 
 export default function Home() {
     const [isTyping, setIsTyping] = useState(false);
+
+    useEffect(() => {
+        setIsTyping(true);
+    }, []);
+
     return (
         <>
             <main id="Home" className="flex w-full h-screen justify-center items-center bg-linear-gradient">
                 <div className="text-center ">
-                    <h1 className="text-lg font-extrabold leading-none tracking-tight lg:pl-10 lg:ml-5 text-blue-700  dark:text-text-blue-700">HEY! I AM</h1>
-                    <p className="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight lg:pl-24 lg:ml-12 sm:text-lg md:text-6xl lg:text-7xl dark:text-gray-900">MUKESH PRAJAPATI</p>
-                    <Typist
-                        cursor={{ show:false }}
-                        onTypingDone={() => setIsTyping(true)}
-                        avgTypingDelay={40}
-                        stdTypingDelay={30}
-                        startDelay={500}
-                        loop={true}
-                    >
-                        <p className="mt-3 text-xl font-extrabold leading-none lg:pl-10 lg:ml-10 tracking-tight text-blue-700 dark:text-text-blue-700">I am a junior React Native developer</p>
-                    </Typist>
+                    <h1 className="text-lg mb-5 font-extrabold leading-none tracking-tight lg:pl-10 lg:ml-5 text-blue-700  dark:text-text-blue-700">HEY! I AM</h1>
+                    <p className="mt-2 mb-5 text-4xl font-extrabold text-gray-900 tracking-tight lg:pl-24 lg:ml-10 sm:text-lg md:text-6xl lg:text-6xl dark:text-gray-900">MUKESH PRAJAPATI</p>
+                    <Typewriter
+                        options={{
+                            strings: [
+                                '<span class="text-2xl font-extrabold leading-none tracking-tight lg:pl-10 lg:ml-5 mt-10 text-blue-700  dark:text-text-blue-700">I am a junior React Native developer.</span>'
+                            ],
+                            autoStart: true,
+                            loop: true,
+                            cursor: '|',
+                            delay: 'natural',
+                            pauseFor:1000
+                        }}
+                    />
+
 
                     <ScrollLink to="About"
                         spy={true}

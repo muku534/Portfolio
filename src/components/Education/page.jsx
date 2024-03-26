@@ -7,10 +7,10 @@ const page = () => {
     return (
         <div className="flex justify-center"  >
             <section className="text-gray-400 body-font lg:ml-5 lg:pl-10 ">
-                <h1 className="title-font sm:text-3xl text-xl font-bold text-gray-800">Education</h1>
+                <h1 className="title-font sm:text-3xl text-3xl mb-1 font-extrabold text-gray-800">Education</h1>
                 <div className="container px-5  mx-auto flex flex-wrap">
                     <div className="flex flex-wrap -m-4">
-                        <div className="p-8 lg:w-full lg:pl-24 md:w-full">
+                        <div className="mt-10 lg:w-full lg:pl-24 md:w-full">
                             <div className="flex sm:flex-row flex-col">
                                 <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8" viewBox="0 0 24 24">
