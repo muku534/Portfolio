@@ -2,20 +2,6 @@
 
 
 import React from 'react';
-import CSS from "../../../public/Logo/CSS3.png";
-import Fiebase from "../../../public/Logo/Firebase.png";
-import Git from "../../../public/Logo/Git.png";
-import GitHub from "../../../public/Logo/GitHub.png";
-import HTML5 from "../../../public/Logo/HTML5.png";
-import JavaScript from "../../../public/Logo/JavaScript.png";
-import jquery from "../../../public/Logo/jquery.png";
-import Reactjs from "../../../public/Logo/React.js.png";
-import Next from "../../../public/Logo/Next.js.png";
-import Node from "../../../public/Logo/Node.js.png";
-import Reactnative from "../../../public/Logo/Reactnative.png";
-import MongoDB from "../../../public/Logo/MongoDB.png";
-import Redux from "../../../public/Logo/Redux.png";
-import Tailwind from "../../../public/Logo/Tailwind CSS.png";
 
 const page = () => {
     return (
@@ -31,7 +17,7 @@ const page = () => {
                         <SkillIcon src="/Logo/GitHub.png" alt="GitHub" />
                         <SkillIcon src="/Logo/HTML5.png" alt="HTML5" />
                         <SkillIcon src="/Logo/JavaScript.png" alt="JavaScript" />
-                        <SkillIcon src="/Logo/jquery.png" alt="jQuery" />
+                        <SkillIcon src="/Logo/jQuery.png" alt="jQuery" />
                         <SkillIcon src="/Logo/React.js.png" alt="React.js" />
                         <SkillIcon src="/Logo/Next.js.png" alt="Next.js" />
                         <SkillIcon src="/Logo/Node.js.png" alt="Node.js" />
