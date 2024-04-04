@@ -1,36 +1,65 @@
 "use client";
 
+
 import React from 'react'
-import { useState, useEffect } from 'react';
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import Link from "next/link";
 
 const page = () => {
     return (
-        <main id="Home" className="flex w-full lg:mt-60 lg:mb-20 justify-center items-center ">
-            <div className="lg:w-1/2 lg:pr-10 lg:px-32 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-                <div className="mb-10 lg:ml-5 ">
-                    <h1 className="text-3xl lg:text-5xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Hello! I'm Mukesh Prajapati </h1>
-                </div>
-            </div>
-            <div className="w-full lg:w-1/2 lg:px-14 justify-center items-center">
-                <div className='mb-10 lg:ml-5 justify-center items-center'>
-                    <p className="text-3xl lg:ml-10 lg:text-4xl font-normal text-gray-900 tracking-tight mb-4 leading-relaxed">A Junior React Native Developer based in Surat, India.</p>
-                    <p className="text-md lg:ml-10 lg:text-md font-normal text-gray-400 tracking-tight mb-4 leading-relaxed">Passionate about software development.</p>
-
-                    <div className="mt-10 flex flex-col lg:flex-row items-center lg:ml-10  lg:items-start">
-                        <Link href="#" className="text-gray-100 bg-gray-900 justify-center  inline-flex items-center  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 " role="button">
-                            Talk with me
-                        </Link>
-                        <Link href="#" className="text-gray-700 ml-5 justify-center inline-flex items-center font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 border border-gray-400 border-solid border-2" role="button">
-                            See my work
-                        </Link>
+        <div className="flex justify-center"  >
+            <section className="text-gray-400 body-font lg:ml-5 lg:pl-10 ">
+                <h1 className="title-font sm:text-3xl text-3xl mb-1 font-extrabold text-gray-800">Experience</h1>
+                <div className="container px-5  mx-auto flex flex-wrap">
+                    <div className="flex flex-wrap -m-4">
+                        <div className="mt-10 lg:w-full lg:pl-24 md:w-full">
+                            <div className="flex sm:flex-row flex-col">
+                                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                </div>
+                                <div className="flex-grow">
+                                    <h2 className="text-indigo-600 text-lg title-font font-bold mb-3">May 2023 - July 2023</h2>
+                                    <h2 className="text-gray-900 text-xl title-font font-bold mb-3">React Native Intern (Blockchaindev)</h2>
+                                    <p className="leading-relaxed text-base">• Completed an intensive internship focused on React Native, concurrently deepening expertise in Node.js, MongoDB, and Firebase.
+                                        <br /> • Applied acquired knowledge to contribute significantly to project development.</p>
+                                    {/* <a className="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a> */}
+                                </div>
+                            </div>
+                            <hr className="h-px w-auto my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                        </div>
+                        <div className=" lg:w-full lg:pl-24 md:w-full">
+                            <div className="flex  sm:flex-row flex-col">
+                                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8" viewBox="0 0 24 24">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                </div>
+                                <div className="flex-grow">
+                                    <h2 className="text-indigo-600 text-lg title-font font-bold mb-3">Aug 2023 - Jan 2024</h2>
+                                    <h2 className="text-gray-900 text-xl title-font font-bold mb-3">Junior React Native Developer (Blockchaindev)</h2>
+                                    <p className="leading-relaxed text-base">• Actively engaged in the development of a social media application.
+                                        <br />  • Collaborated with a team to design, implement, and maintain features using React Native CLI and Firebase.
+                                        <br /> • Contributed innovative solutions to enhance user experience and application performance.
+                                        <br /> • Adhered to project timelines and objectives.</p>
+                                    {/* <a className="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a> */}
+                                </div>
+                            </div>
+                            <hr className="h-px w-auto my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                        </div>
 
 
                     </div>
                 </div>
-            </div>
-        </main>
+            </section>
+        </div>
     )
 }
 
