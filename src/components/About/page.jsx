@@ -4,48 +4,134 @@ import Link from "next/link";
 import Image from "next/image";
 import Profile from "../../../public/assets/Profile.jpg"
 import { FaDownload } from "react-icons/fa";
+import { Avatar } from "@nextui-org/react";
 
 const page = () => {
 
     return (
         <div id="About">
-            <section className="text-gray-400 body-font mt-40 ">
-                <div className="container mx-auto flex lg:px-5  md:flex-row flex-col items-center justify-center" >
-                    {/* <div className="lg:max-w-xl lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 lg:ml-24 lg:pl-24 ">
-                        <!-- Add the 'hidden' class for small screens -->
-                        <div className="custom-image overflow-hidden object-cover object-center rounded lg:block hidden">
-                            <Image alt="hero" src={Profile} width={600} height={600} />
+            <section className="flex lg:flex-row flex-col w-full pt-14 bg-gray-50">
+                <div className="lg:w-1/2 lg:pr-10 lg:px-32 p-5 flex flex-col ">
+                    <div className="lg:ml-5 ">
+                        <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Working experience</h1>
+                        <div className="lg:mt-8">
+                            <div className="flex items-center">
+                                <Avatar
+                                    isBordered
+                                    radius="sm"
+                                    src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+                                />
+                                <div className="ml-4">
+                                    <h3 className="text-sm text-gray-700 font-semibold">
+                                        React Native Intern at <span className="font-bold text-gray-900">Blockchaindev</span>
+                                    </h3>
+                                    <p className="text-sm font-normal text-gray-400">May 2023 - July 2023</p>
+                                </div>
+                            </div>
+                            <hr className="mt-4 border-gray-300  mr-36" />
+
+                            <div className="flex mt-4  items-center">
+                                <Avatar
+                                    isBordered
+                                    radius="sm"
+                                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                                />
+                                <div className="ml-4">
+                                    <h3 className="text-sm text-gray-700 font-semibold">
+                                        Junior React Native Developer at <span className="font-bold text-gray-900">Blockchaindev</span>
+                                    </h3>
+                                    <p className="text-sm font-normal text-gray-400">Aug 2023 - Feb 2024</p>
+                                </div>
+                            </div>
                         </div>
-                    </div> */}
-                    <div className="lg:flex-grow lg:pl-24  lg:mx-20  md:pt-5 flex flex-col md:text-left items-center text-center items-center justify-center">
-                        <div className="mb-4">
-                            <h1 className="title-font sm:text-5xl text-3xl mb-1 font-extrabold text-gray-800">About Me</h1>
-                            <hr className="w-48 h-1 mx-auto my-2 bg-indigo-300 border-0 rounded md:my-1 dark:bg-indigo-300"></hr>
-                        </div>
-                        <div className="lg:pl-24 lg:pr-24 pt-5 md:pl-4 md:pr-4">
-                            <p className="mb-6 leading-relaxed text-gray-600">Hi there! I&apos;m Mukesh Prajapati, a Junior React Native Developer based in Surat, India. I am passionate about software development and am currently pursuing a Master&apos;s in Computer Applications with a focus on app development.</p>
-                            <p className="mb-6 leading-relaxed text-gray-600">My journey into the world of software began during my Bachelor&apos;s at Veer Narmad South Gujarat University, where I honed my skills in web and cross-platform app development.</p>
-                            <p className="mb-6 leading-relaxed text-gray-600">During an intensive internship at Blockchaindev Surat, Gujarat, I dived deep into React Native, Node.js, MongoDB, and Firebase, contributing significantly to projects like CallVerse a privacy-focused chat app.</p>
-                            <p className="mb-6 leading-relaxed text-gray-600">As a Junior React Native Developer, I collaborated with a dynamic team to bring ideas to life, ensuring seamless user experiences in every project.</p>
-                            <p className="mb-6 leading-relaxed text-gray-600">With expertise in HTML, CSS, JavaScript, React.js, React Native, Node.js, MongoDB, and Rest APIs, I&apos;m ready to tackle any challenge head-on.</p>
-                            <p className="mb-6 leading-relaxed text-gray-600">Let&apos;s connect and explore the endless possibilities together!</p>
+                    </div>
+                </div>
+                <div className="w-full lg:w-1/2 lg:px-14 p-5 items-center">
+                    <div className='mb-10 lg:ml-5  items-center'>
+                        <p className="text-2xl lg:ml-10 lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Qualifications</p>
+                        <div className="lg:ml-10 lg:mt-8">
+                            <div className="flex items-center">
+                                <Avatar
+                                    isBordered
+                                    radius="sm"
+                                    src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+                                />
+                                <div className="ml-4">
+                                    <h3 className="text-sm text-gray-700 font-semibold">H.S.C</h3>
+                                    <p className="text-sm font-normal text-gray-400">2020</p>
+                                </div>
+                            </div>
+                            <hr className="mt-4 border-gray-300  mr-40" />
 
 
-                            <div className="flex justify-center">
-                                {/* <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Download Resume </button> */}
-                                <a
-                                    href="/assets/MukeshPrajapati_Resume.pdf"
-                                    download="MukeshPrajapati_Resume.pdf"
-                                    className="inline-flex items-center  text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                                >
-                                    <FaDownload className="mr-2" />
-                                    Download Resume
-                                </a>
+                            <div className="flex mt-4  items-center">
+                                <Avatar
+                                    isBordered
+                                    radius="sm"
+                                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                                />
+                                <div className="ml-4">
+                                    <h3 className="text-sm text-gray-700 font-semibold"><span className="font-bold text-gray-900">BCA</span> (Bachelor of Computer Applications)</h3>
+                                    <p className="text-sm font-normal text-gray-400">2020 - 2023</p>
+                                </div>
+                            </div>
+                            <hr className="mt-4 border-gray-300  mr-40" />
+
+                            <div className="flex mt-4  items-center">
+                                <Avatar
+                                    isBordered
+                                    radius="sm"
+                                    src="https://i.pravatar.cc/150?u=a04258114e29026702d"
+                                />
+                                <div className="ml-4">
+                                    <h3 className="text-sm text-gray-700 font-semibold"><span className="font-bold text-gray-900">MCA</span> (Master of Computer Application)</h3>
+                                    <p className="text-sm font-normal text-gray-400">2023 - 2025</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div className="pt-20 bg-gray-50 pb-10 p-5">
+                <div className="flex flex-row  lg:px-32 w-full justify-between">
+                    <div className=" lg:ml-5  items-center">
+                        <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">I can help you with</h1>
+                    </div>
+                    <div className="items-center">
+                        <Link href="#" className="text-gray-700 ml-5 justify-center inline-flex items-center font-medium rounded-lg text-sm px-2 py-1.5 text-center dark:bg-primary-600 border border-gray-400 border-solid border-2" role="button">
+                            See my work
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="flex lg:flex-row flex-col lg:px-32 w-full justify-between">
+                    <div className="lg:w-1/2 lg:pr-10 lg:px-10 flex flex-col ">
+                        <div className="flex mt-4 mb-5 lg:ml-5 items-center">
+                            <Avatar
+                                radius="sm"
+                                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                            />
+                            <div className="ml-4">
+                                <h1 className="text-xl lg:text-xl font-normal leading-tight tracking-tight text-gray-7 00 dark:text-text-gray-700 mb-4">Full page web site design</h1>
+                            </div>
+                        </div>
+                        <div className="lg:pl-5">
+                            <Image src="/assets/demo.png" width={450} height={450} />
+                        </div>
+                    </div>
+                    <div className="w-full lg:w-1/2 lg:px-14  items-center">
+                        <div className="flex mt-4 mb-5 lg:ml-5 items-center">
+                            <div className="">
+                                <p className="text-sm font-normal text-gray-400">crafting immersive and engaging full-page website design that captivate audiences and deliver a seamless user experience</p>
+                            </div>
+                        </div>
+                        <div className="lg:pl-5">
+                            <Image src="/assets/demo2.png" width={450} height={450} />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     )

@@ -1,43 +1,86 @@
 "use client";
 
 import Link from "next/link";
+import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import { Avatar } from "@nextui-org/react";
 
 const page = () => {
+    const list = [
+        {
+            img: "/assets/demo.png",
+            price: "$5.50",
+            title: "Struktura",
+            durection: "August 2022",
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laboriosam harum blanditiis, doloremque quibusdam, vitae repellendus quos corrupti, repudiandae neque ex ipsa facere obcaecati assumenda cum similique dicta voluptas fugiat repellat saepe? Nam, maxime!"
+        },
+        {
+            img: "/assets/demo2.png",
+            price: "$3.00",
+            title: "Struktura",
+            durection: "August 2022",
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laboriosam harum blanditiis, doloremque quibusdam, vitae repellendus quos corrupti, repudiandae neque ex ipsa facere obcaecati assumenda cum similique dicta voluptas fugiat repellat saepe? Nam, maxime!"
+        },
+        {
+            img: "/assets/demo3.png",
+            price: "$10.00",
+            title: "Struktura",
+            durection: "August 2022",
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laboriosam harum blanditiis, doloremque quibusdam, vitae repellendus quos corrupti, repudiandae neque ex ipsa facere obcaecati assumenda cum similique dicta voluptas fugiat repellat saepe? Nam, maxime!"
+        },
+        {
+            img: "/assets/demo4.png",
+            price: "$5.30",
+            title: "Struktura",
+            durection: "August 2022",
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laboriosam harum blanditiis, doloremque quibusdam, vitae repellendus quos corrupti, repudiandae neque ex ipsa facere obcaecati assumenda cum similique dicta voluptas fugiat repellat saepe? Nam, maxime!"
+        },
+    ];
     return (
         <div id="Projects">
-            <section className="bg-white antialiased">
+            <section className="bg-gray-50">
                 <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-5 mt-10">
-                    <div className="max-w-2xl mx-auto text-center">
+                    <div className="max-w-2xl lg:pt-10 mx-auto text-center">
                         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-gray-800">
-                            Projects
+                            Selected works
                         </h2>
-                        <hr className="w-32 h-1 mx-auto my-2 bg-indigo-300 border-0 rounded md:my-1 dark:bg-indigo-300"></hr>
-                        <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+                        {/* <hr className="w-32 h-1 mx-auto my-2 bg-indigo-300 border-0 rounded md:my-1 dark:bg-indigo-300"></hr> */}
+                        {/* <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
                             Discover a variety of projects demonstrating my skills and enthusiasm for technology. From web development to mobile apps, each project represents a step forward in my journey as a developer.
-                        </p>
+                        </p> */}
                     </div>
 
-                    <div className="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-                        <ProjectCard
-                            title="SCS Website (React.js)"
-                            description="Developed SCS (Sustainable Computer Solution), an e-commerce app built using React.js, Node.js, Express.js, MongoDB and ...."
-                            link="https://github.com/muku534/bug-free-adventure"
-                        />
-                        <ProjectCard
-                            title="CallVerse (React Native Expo)"
-                            description="CallVerse, a secure and seamless chat app built using React Native Expo, Node.js, Express.js, MongoDB, and Socket.io."
-                            link="https://github.com/muku534/CallVerse-new-version-"
-                        />
-                        <ProjectCard
-                            title="SCS (React Native)"
-                            description="Developed SCS (Sustainable Computer Solution), an e-commerce app built using React Native CLI, Node.js, Express.js, MongoDB."
-                            link="https://github.com/muku534/bug-free-adventure-app"
-                        />
-                        <ProjectCard
-                            title="CallVerse (React Native CLI and Firebase)"
-                            description="Developed CallVerse (Chat App), a chat application using React Native CLI and Firebase. The application features a unique offering where...."
-                            link="https://github.com/muku534/bug-free-adventure-app"
-                        />
+                    <div className="mt-10 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+                        {list.map((item, index) => (
+                            <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+                                <CardBody className="overflow-visible p-0">
+                                    <Image
+                                        shadow="sm"
+                                        radius="lg"
+                                        width="100%"
+                                        alt={item.title}
+                                        className="w-full object-cover h-[300px]"
+                                        src={item.img}
+                                    />
+                                </CardBody>
+                                <CardFooter className="text-small pt-5 flex flex-col gap-1 items-start">
+                                    <b className="text-xl lg:text-xl">{item.title}</b>
+                                    <p className="text-default-500 pt-2 pb-2 text-center">{item.durection}</p>
+                                    <p className="text-default-500 text-start">{item.description}</p>
+                                </CardFooter>
+                            </Card>
+                        ))}
+                    </div>
+
+                    <div className="mt-40 mb-32 items-center justify-center lg:px-40">
+                        <div className="flex gap-4 items-center justify-center">
+                            <Avatar radius="sm" className="w-10 h-10" src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
+                            <Avatar radius="sm" className="w-10 h-10" src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
+                            <Avatar radius="sm" className="w-16 h-16" src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
+                            <Avatar radius="sm" className="w-10 h-10" src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
+                            <Avatar radius="sm" className="w-10 h-10" src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
+                        </div>
+                        <p className="lg:mt-5 text-default-500 text-center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, officia eaque, reprehenderit quis tenetur quisquam omnis at voluptates et numquam veniam laudantium architecto dignissimos, suscipit labore cum necessitatibus accusamus alias cumque perferendis? At, maxime. </p>
+                        <p className="lg:mt-5 text-default-900 font-bold text-center"> John johnson </p>
                     </div>
                 </div>
             </section>

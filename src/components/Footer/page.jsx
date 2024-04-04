@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const page = ({ isMobileOrTabletDevice }) => {
     return (
-        <footer className={`text-gray-400 bg-gradient-to-r from-indigo-100 to-indigo-100 body-font ${isMobileOrTabletDevice ? 'mb-12' : ''}`}>
+        <footer id="Footer" className={`text-gray-400  body-font ${isMobileOrTabletDevice ? 'mb-14' : ''}`}>
             <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
                 <Link href={'/'} className="flex title-font font-medium items-center md:justify-start justify-center text-white">
                     {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">

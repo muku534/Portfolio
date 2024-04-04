@@ -1,8 +1,7 @@
 "use client";
 
-import { Link as ScrollLink } from "react-scroll";
 import { useRef, useState } from "react";
-
+import Link from "next/link";
 import Image from "next/image";
 import Education from "@/components/Education/page";
 import Experience from "@/components/Experience/page";
@@ -14,84 +13,30 @@ const Page = () => {
 
     return (
         <div id="Resume">
-            <section className="text-gray-400 body-font mt-40 ">
-                <div className="lg:flex-grow lg:pl-24 lg:mx-20 md:pt-5 flex flex-col md:text-left items-center text-center items-center justify-center">
-                    <div className="mb-4">
-                        <h1 className="title-font sm:text-5xl text-3xl font-extrabold text-gray-800">Qualifications and Experience
-                        </h1>
-                        <hr className="w-48 h-1 mx-auto my-2 bg-indigo-300 border-0 rounded md:my-1 dark:bg-indigo-300"></hr>
-                    </div>
-                    <p className="text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
-                        Discover my educational background and professional journey, highlighting my skills and expertise.
-                    </p>
-                </div>
-                <div className="flex flex-col md:flex-row justify-center h-screen lg:mt-10 md:mt-24 mt-10 ml-5 md:ml-10 lg:ml-20 lg:pl-20 lg:mr-20 lg:pr-20">
-                    {/* Sidebar */}
-                    <div className="hidden lg:flex w-40 lg:ml-12">
-                        <div className="text-lg py-10 font-medium text-center text-gray-500 dark:text-gray-400">
-                            <ul className="flex-wrap -mb-px">
-                                <li className="mb-2">
-                                    <ScrollLink
-                                        to="Education"
-                                        spy={true}
-                                        containerId="mainContent"
-                                        smooth={true}
-                                        offset={-70}
-                                        duration={500}
-                                        activeClass="active"
-                                        onSetActive={() => setActiveLink("Education")}
-                                        className="inline-block p-4 border-b-2 cursor-pointer border-transparent rounded-t-lg text-gray-600 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-700"
-                                    >
-                                        Education
-                                    </ScrollLink>
-                                </li>
-                                <li className="mr-2">
-                                    <ScrollLink to="Experience"
-                                        spy={true}
-                                        containerId="mainContent"
-                                        smooth={true}
-                                        offset={-70}
-                                        duration={500}
-                                        activeClass="active"
-                                        onSetActive={() => setActiveLink("Experience")}
-                                        className="inline-block p-4 border-b-2 cursor-pointer border-transparent rounded-t-lg text-gray-600 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-700"
-                                        aria-current="page"
-                                    >
-                                        Experience
-                                    </ScrollLink>
-                                </li>
-                                <li className="mr-2">
-                                    <ScrollLink to="Skills"
-                                        spy={true}
-                                        containerId="mainContent"
-                                        smooth={true}
-                                        offset={-70}
-                                        duration={500}
-                                        activeClass="active"
-                                        onSetActive={() => setActiveLink("Skills")}
-                                        className="inline-block p-4 border-b-2 cursor-pointer border-transparent rounded-t-lg  text-gray-600 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-700"
-                                    >
-                                        Skills
-                                    </ScrollLink>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <main className="flex w-full lg:flex-row flex-col p-5 mt-10 lg:mt-28 lg:mb-10 justify-center items-center ">
+                <div className="lg:w-1/2 lg:pr-10 lg:px-32 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+                    <div className="lg:mb-10 lg:ml-5 ">
+                        <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Experiemce with a variety of Projects and industries</h1>
+                        <p className="text-md  lg:text-md font-normal text-gray-400 tracking-tight mb-4 leading-relaxed">versatile experience across diverse projects and industries adaptability and valuable Skills to any task.</p>
 
-                    {/* Main Content */}
-                    <div ref={mainContentRef} id="mainContent" className="w-full md:w-100 overflow-y-scroll hide-scrollbar mt-4 ">
-                        <div id="Education">
-                            <Education />
-                        </div>
-                        <div id="Experience">
-                            <Experience />
-                        </div>
-                        <div id="Skills">
-                            <Skills />
+                        <div className="mt-10 flex flex-row justify-center lg:justify-start items-center lg:items-start">
+                            <Link href="#" className="text-gray-100 bg-gray-900 justify-center  inline-flex items-center  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 " role="button">
+                                Talk with me
+                            </Link>
+                            <Link href="#" className="text-gray-700 ml-5 justify-center inline-flex items-center font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 border border-gray-400 border-solid border-2" role="button">
+                                See my work
+                            </Link>
+
+
                         </div>
                     </div>
                 </div>
-            </section >
+                <div className="w-full lg:w-1/2 lg:px-14 justify-center items-center">
+                    <div className='mb-10 lg:ml-5 justify-center items-center'>
+
+                    </div>
+                </div>
+            </main>
         </div >
     );
 };

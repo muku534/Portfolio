@@ -8,7 +8,7 @@ import BottomNavigation from '@/components/BottomNavigation/page'
 import Footer from '@/components/Footer/page'
 import Head from 'next/head';
 import Link from "next/link";
-
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const handleScroll = () => {
       // Check if the user has scrolled more than 20 pixels from the top
-      setScrolled(window.scrollY > 250);
+      setScrolled(window.scrollY > 100);
     };
 
     // Add event listener for the "scroll" event
@@ -56,12 +56,14 @@ export default function RootLayout({ children }) {
       <Head>
         <Link rel='icon' href='/assets/favicon.png' />
       </Head>
-      <body className={inter.className}>
-        {!isMobileOrTabletDevice && <Navbar scrolled={scrolled} isMobileOrTabletDevice={!isMobileOrTabletDevice} />}
-        {children}
-        {isMobileOrTabletDevice && <BottomNavigation />}
-        <Footer isMobileOrTabletDevice={isMobileOrTabletDevice} />
-      </body>
+      <NextUIProvider>
+        <body className={inter.className}>
+          {!isMobileOrTabletDevice && <Navbar scrolled={scrolled} isMobileOrTabletDevice={!isMobileOrTabletDevice} />}
+          {children}
+          {isMobileOrTabletDevice && <BottomNavigation />}
+          <Footer isMobileOrTabletDevice={isMobileOrTabletDevice} />
+        </body>
+      </NextUIProvider>
     </html>
   )
 }
