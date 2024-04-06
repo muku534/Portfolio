@@ -5,7 +5,9 @@ import Image from "next/image";
 import Profile from "../../../public/assets/Profile.jpg"
 import { FaDownload } from "react-icons/fa";
 import { Avatar } from "@nextui-org/react";
-
+import ModelTrainingIcon from '@mui/icons-material/ModelTraining';
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
 const page = () => {
 
     return (
@@ -16,11 +18,14 @@ const page = () => {
                         <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Working experience</h1>
                         <div className="lg:mt-8">
                             <div className="flex items-center">
-                                <Avatar
+                                {/* <Avatar
                                     isBordered
                                     radius="sm"
                                     src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                                />
+                                /> */}
+                                <div className="bg-gray-200 p-2 rounded-lg">
+                                    <ModelTrainingIcon />
+                                </div>
                                 <div className="ml-4">
                                     <h3 className="text-sm text-gray-700 font-semibold">
                                         React Native Intern at <span className="font-bold text-gray-900">Blockchaindev</span>
@@ -31,11 +36,14 @@ const page = () => {
                             <hr className="mt-4 border-gray-300  mr-36" />
 
                             <div className="flex mt-4  items-center">
-                                <Avatar
+                                {/* <Avatar
                                     isBordered
                                     radius="sm"
                                     src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                                />
+                                /> */}
+                                <div className="bg-gray-200 p-2 rounded-lg">
+                                    <WorkIcon className='inline' />
+                                </div>
                                 <div className="ml-4">
                                     <h3 className="text-sm text-gray-700 font-semibold">
                                         Junior React Native Developer at <span className="font-bold text-gray-900">Blockchaindev</span>
@@ -51,11 +59,14 @@ const page = () => {
                         <p className="text-2xl lg:ml-10 lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Qualifications</p>
                         <div className="lg:ml-10 lg:mt-8">
                             <div className="flex items-center">
-                                <Avatar
+                                {/* <Avatar
                                     isBordered
                                     radius="sm"
                                     src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                                />
+                                /> */}
+                                <div className="bg-gray-200 p-2 rounded-lg">
+                                    <SchoolIcon />
+                                </div>
                                 <div className="ml-4">
                                     <h3 className="text-sm text-gray-700 font-semibold">H.S.C</h3>
                                     <p className="text-sm font-normal text-gray-400">2020</p>
@@ -65,11 +76,14 @@ const page = () => {
 
 
                             <div className="flex mt-4  items-center">
-                                <Avatar
+                                {/* <Avatar
                                     isBordered
                                     radius="sm"
                                     src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                                />
+                                /> */}
+                                <div className="bg-gray-200 p-2 rounded-lg">
+                                    <SchoolIcon />
+                                </div>
                                 <div className="ml-4">
                                     <h3 className="text-sm text-gray-700 font-semibold"><span className="font-bold text-gray-900">BCA</span> (Bachelor of Computer Applications)</h3>
                                     <p className="text-sm font-normal text-gray-400">2020 - 2023</p>
@@ -78,11 +92,14 @@ const page = () => {
                             <hr className="mt-4 border-gray-300  mr-40" />
 
                             <div className="flex mt-4  items-center">
-                                <Avatar
+                                {/* <Avatar
                                     isBordered
                                     radius="sm"
                                     src="https://i.pravatar.cc/150?u=a04258114e29026702d"
-                                />
+                                /> */}
+                                <div className="bg-gray-200 p-2 rounded-lg">
+                                    <SchoolIcon />
+                                </div>
                                 <div className="ml-4">
                                     <h3 className="text-sm text-gray-700 font-semibold"><span className="font-bold text-gray-900">MCA</span> (Master of Computer Application)</h3>
                                     <p className="text-sm font-normal text-gray-400">2023 - 2025</p>
@@ -91,14 +108,14 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
             <div className="pt-20 bg-gray-50 pb-10 p-5">
                 <div className="flex flex-row  lg:px-32 w-full justify-between">
                     <div className=" lg:ml-5  items-center">
                         <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">I can help you with</h1>
                     </div>
                     <div className="items-center">
-                        <Link href="#" className="text-gray-700 ml-5 justify-center inline-flex items-center font-medium rounded-lg text-sm px-2 py-1.5 text-center dark:bg-primary-600 border border-gray-400 border-solid border-2" role="button">
+                        <Link href="https://github.com/muku534" className="text-gray-700 ml-5 justify-center inline-flex items-center font-medium rounded-lg text-sm px-2 py-1.5 text-center dark:bg-primary-600 border border-gray-400 border-solid border-2" role="button">
                             See my work
                         </Link>
                     </div>
@@ -133,7 +150,7 @@ const page = () => {
 
             </div>
 
-        </div>
+        </div >
     )
 }
 

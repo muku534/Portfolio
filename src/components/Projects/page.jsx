@@ -9,32 +9,41 @@ const page = () => {
         {
             img: "/assets/demo.png",
             price: "$5.50",
-            title: "Struktura",
-            durection: "August 2022",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laboriosam harum blanditiis, doloremque quibusdam, vitae repellendus quos corrupti, repudiandae neque ex ipsa facere obcaecati assumenda cum similique dicta voluptas fugiat repellat saepe? Nam, maxime!"
+            title: "ResumeCraft",
+            technology: "Next.js, Firebase",
+            description: "Introducing ResumeCraft, where crafting a professional resume has never been easier. With a selection of three ATS-friendly templates, our platform offers a seamless experience for users to input their information using the intuitive editor powered by OverLeaf. Designed for both simplicity and effectiveness, our templates ensure your resume stands out to employers and passes through Applicant Tracking Systems effortlessly. Best of all, our service is completely free – no hidden fees or subscriptions required. Download your personalized resume as a PDF with just one click and take the next step towards securing your dream job.",
+            Github: "https://github.com/muku534/ResumeCraft"
         },
         {
             img: "/assets/demo2.png",
             price: "$3.00",
-            title: "Struktura",
-            durection: "August 2022",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laboriosam harum blanditiis, doloremque quibusdam, vitae repellendus quos corrupti, repudiandae neque ex ipsa facere obcaecati assumenda cum similique dicta voluptas fugiat repellat saepe? Nam, maxime!"
+            title: "CallVerse",
+            technology: "React Native, Firebase",
+            description: "Developed CallVerse (Chat App), a chat application using React Native CLI and Firebase. The application features a unique offering where users are provided with random phone numbers for secure communication, prioritizing privacy.The app allows user registration and sign-in using unique identifiers or registered email.It also includes robust search functionality for easy contact discovery and connection and user can also add contact. Real - time messaging capabilities were integrated for seamless conversations.Additionally, the app facilitates the sharing of images and Video, enhancing the user experience.",
+            Github: "https://github.com/muku534/CallVerse-new-version-"
         },
         {
             img: "/assets/demo3.png",
             price: "$10.00",
-            title: "Struktura",
-            durection: "August 2022",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laboriosam harum blanditiis, doloremque quibusdam, vitae repellendus quos corrupti, repudiandae neque ex ipsa facere obcaecati assumenda cum similique dicta voluptas fugiat repellat saepe? Nam, maxime!"
+            title: "SCS (Sustainable Computer Solution)",
+            technology: "React Native Expo, Node.js, MongoDB, Express.js",
+            description: "Introducing SCS (Sustainable Computer Solutions), an innovative e-commerce application tailored for IT companies and universities. SCS serves as a comprehensive platform facilitating the seamless selling, inspection, repair, and customization of computer systems. With a focus on ensuring all systems are in prime working condition, SCS not only promotes technology accessibility but also contributes to sustainability by facilitating the resale of systems. By fostering the accessibility of cutting-edge technology, SCS plays a pivotal role in promoting sustainability and technological advancement.",
+            Github: "https://github.com/muku534/bug-free-adventure-app"
         },
         {
             img: "/assets/demo4.png",
             price: "$5.30",
-            title: "Struktura",
-            durection: "August 2022",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laboriosam harum blanditiis, doloremque quibusdam, vitae repellendus quos corrupti, repudiandae neque ex ipsa facere obcaecati assumenda cum similique dicta voluptas fugiat repellat saepe? Nam, maxime!"
+            title: "MarketChat",
+            technology: "React Native CLI , Firebase",
+            description: "MarketChat is a dynamic social media platform designed for connecting people, creating communities, and facilitating various forms of expression. With features like friend discovery, page creation, group joining, event organization, and seamless content sharing, MarketChat offers a comprehensive social experience. Real-time notifications, intuitive chat, and robust privacy controls ensure a safe and engaging environment. As a key contributor to MarketChat's development, I played a pivotal role in shaping its features and functionalities, contributing to its success in the competitive social media landscape.",
+            Github: "#"
         },
     ];
+
+    const handleCardClick = (link) => {
+        window.open(link, "_blank");
+    };
+
     return (
         <div id="Projects">
             <section className="bg-gray-50">
@@ -51,27 +60,28 @@ const page = () => {
 
                     <div className="mt-10 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                         {list.map((item, index) => (
-                            <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
-                                <CardBody className="overflow-visible p-0">
+                            <Card shadow="sm" key={index} isPressable onPress={() => handleCardClick(item.Github)}>
+                                <CardBody className="overflow-hidden p-0">
                                     <Image
                                         shadow="sm"
                                         radius="lg"
                                         width="100%"
                                         alt={item.title}
-                                        className="w-full object-cover h-[300px]"
+                                        className="w-full object-cover h-[300px] z-10" // Add z-10 class here
                                         src={item.img}
                                     />
+
                                 </CardBody>
                                 <CardFooter className="text-small pt-5 flex flex-col gap-1 items-start">
                                     <b className="text-xl lg:text-xl">{item.title}</b>
-                                    <p className="text-default-500 pt-2 pb-2 text-center">{item.durection}</p>
+                                    <p className="text-default-500 pt-2 pb-2 text-center">{item.technology}</p>
                                     <p className="text-default-500 text-start">{item.description}</p>
                                 </CardFooter>
                             </Card>
                         ))}
                     </div>
 
-                    <div className="mt-40 mb-32 items-center justify-center lg:px-40">
+                    {/* <div className="mt-40 mb-32 items-center justify-center lg:px-40">
                         <div className="flex gap-4 items-center justify-center">
                             <Avatar radius="sm" className="w-10 h-10" src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
                             <Avatar radius="sm" className="w-10 h-10" src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
@@ -81,7 +91,7 @@ const page = () => {
                         </div>
                         <p className="lg:mt-5 text-default-500 text-center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, officia eaque, reprehenderit quis tenetur quisquam omnis at voluptates et numquam veniam laudantium architecto dignissimos, suscipit labore cum necessitatibus accusamus alias cumque perferendis? At, maxime. </p>
                         <p className="lg:mt-5 text-default-900 font-bold text-center"> John johnson </p>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </div>

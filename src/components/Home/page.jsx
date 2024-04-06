@@ -24,6 +24,14 @@ export default function Home() {
     const [showPhone, setShowPhone] = useState(false);
     const [currentTime, setCurrentTime] = useState(new Date());
 
+    const scrollToPortfolio = () => {
+        const portfolioSection = document.getElementById('portfolio-section');
+        if (portfolioSection) {
+            portfolioSection.scrollIntoView({ behavior: 'smooth', offset: -80 });
+
+        }
+    };
+
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentTime(new Date());
@@ -31,6 +39,10 @@ export default function Home() {
 
         return () => clearInterval(interval); // Clean up interval on unmount
     }, []);
+
+    const toggleShowPhone = () => {
+        setShowPhone(prevState => !prevState);
+    };
 
     return (
         <>
@@ -47,20 +59,26 @@ export default function Home() {
                         <p className="text-md lg:ml-10 lg:text-md font-normal text-gray-400 tracking-tight mb-4 leading-relaxed">Passionate about software development.</p>
 
                         <div className="mt-10 flex flex-row  items-center lg:ml-10  lg:items-start">
-                            <Link href="#" onClick={() => setShowPhone(!showPhone)} className="text-gray-100 bg-gray-900 justify-center  inline-flex items-center  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 " role="button">
+                            <button href="#" onClick={() => setShowPhone(!showPhone)} className="text-gray-100 bg-gray-900 justify-center  inline-flex items-center  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 " role="button">
                                 Talk with me
-                            </Link>
-                            <Link href="#" className="text-gray-700 ml-5 justify-center inline-flex items-center font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 border border-gray-400 border-solid border-2" role="button">
-                                See my work
-                            </Link>
+                            </button>
+                            <ScrollLink to="About" // ID of the project section
+                                smooth={true} // Enable smooth scrolling
+                                duration={500}
+                                offset={-30}
+                                role="button"
+                                className="text-gray-700 ml-5 justify-center inline-flex items-center font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 border border-gray-400 border-solid border-2"
+                            >
+                                Explore Portfolio
+                            </ScrollLink>
                         </div>
                     </div>
                 </div>
             </main>
-            {showPhone && <Phone />}
+            {showPhone && <Phone togglePhone={() => setShowPhone(!showPhone)} />}
             <div>
                 <About />
-                <Resume />
+                <Resume togglePhone={() => setShowPhone(!showPhone)} />
                 <Projects />
             </div>
             {/* <div className="flex w-full  p-10 justify-center items-center" >

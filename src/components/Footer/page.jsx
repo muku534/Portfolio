@@ -15,10 +15,10 @@ const page = ({ isMobileOrTabletDevice }) => {
                     <Image src="/assets/favicon.png" alt="Logo" height={40} width={40} />
                     <span className="ml-3 text-xl text-gray-900 font-bold">Mukesh</span>
                 </Link>
-                <p className="text-sm text-gray-450 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4 font-bold">
+                {/* <p className="text-sm text-gray-450 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4 font-bold">
                     © 2024 —
-                    {/* <Link href="https://twitter.com/knyttneve" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer ">Mr.Mukesh.com</Link> */}
-                </p>
+                    <Link href="https://twitter.com/knyttneve" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer ">Mr.Mukesh.com</Link>
+                </p> */}
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                     <Link href={"https://facebook.com/"} className="text-gray-400">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
