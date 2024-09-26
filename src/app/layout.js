@@ -9,6 +9,7 @@ import Footer from '@/components/Footer/page'
 import Head from 'next/head';
 import Link from "next/link";
 import { NextUIProvider } from "@nextui-org/react";
+import { siteMetadata } from './SitMetaData';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,12 +54,13 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <Head>
-        <Link rel='icon' href='/assets/favicon.png' />
-      </Head>
+      <head>
+        <title>{siteMetadata.title}</title>
+        <meta name="description" content={siteMetadata.description} />
+      </head>
       <NextUIProvider>
         <body className={inter.className}>
-          {!isMobileOrTabletDevice && <Navbar scrolled={scrolled} isMobileOrTabletDevice={!isMobileOrTabletDevice} />}
+          <Navbar scrolled={scrolled} isMobileOrTabletDevice={!isMobileOrTabletDevice} />
           {children}
           {isMobileOrTabletDevice && <BottomNavigation />}
           <Footer isMobileOrTabletDevice={isMobileOrTabletDevice} />

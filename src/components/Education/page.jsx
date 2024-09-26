@@ -13,7 +13,7 @@ const page = () => {
                         <div className="mt-10 lg:w-full lg:pl-24 md:w-full">
                             <div className="flex sm:flex-row flex-col">
                                 <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                     </svg>
                                 </div>
@@ -22,7 +22,7 @@ const page = () => {
                                     <h2 className="text-gray-900 text-xl title-font font-bold mb-3">S.S.C</h2>
                                     <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
                                     {/* <a className="mt-3 text-indigo-400 inline-flex items-center">Learn More
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                             <path d="M5 12h14M12 5l7 7-7 7"></path>
                                         </svg>
                                     </a> */}
@@ -33,7 +33,7 @@ const page = () => {
                         <div className=" lg:w-full lg:pl-24 md:w-full">
                             <div className="flex  sm:flex-row flex-col">
                                 <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                     </svg>
                                 </div>
@@ -42,7 +42,7 @@ const page = () => {
                                     <h2 className="text-gray-900 text-xl title-font font-bold mb-3">H.S.C</h2>
                                     <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
                                     {/* <a className="mt-3 text-indigo-400 inline-flex items-center">Learn More
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                             <path d="M5 12h14M12 5l7 7-7 7"></path>
                                         </svg>
                                     </a> */}
@@ -53,7 +53,7 @@ const page = () => {
                         <div className=" lg:w-full lg:pl-24 md:w-full">
                             <div className="flex sm:flex-row flex-col">
                                 <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                     </svg>
                                 </div>
@@ -62,7 +62,7 @@ const page = () => {
                                     <h2 className="text-gray-900 text-xl title-font font-bold mb-3">BCA (Bachelor of Computer Applications)</h2>
                                     <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
                                     {/* <a className="mt-3 text-indigo-400 inline-flex items-center">Learn More
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                             <path d="M5 12h14M12 5l7 7-7 7"></path>
                                         </svg>
                                     </a> */}
@@ -73,7 +73,7 @@ const page = () => {
                         <div className=" lg:w-full lg:pl-24 md:w-full">
                             <div className="flex sm:flex-row flex-col">
                                 <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8" viewBox="0 0 24 24">
                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                     </svg>
                                 </div>
@@ -82,7 +82,7 @@ const page = () => {
                                     <h2 className="text-gray-900 text-xl title-font font-bold mb-3">MCA (Master of Computer Application)</h2>
                                     <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
                                     {/* <a className="mt-3 text-indigo-400 inline-flex items-center">Learn More
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                             <path d="M5 12h14M12 5l7 7-7 7"></path>
                                         </svg>
                                     </a> */}

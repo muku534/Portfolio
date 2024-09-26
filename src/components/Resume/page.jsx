@@ -24,7 +24,7 @@ const Page = ({ togglePhone }) => {
             <main className="flex w-full lg:flex-row flex-col p-5 mt-10 lg:mt-28 lg:mb-10 justify-center items-center ">
                 <div className="lg:w-2/2 lg:pr-10 lg:px-32 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
                     <div className="lg:mb-10 lg:ml-5 ">
-                        <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Experiemce with a variety of Projects and industries</h1>
+                        <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Experience with a variety of Projects and industries</h1>
                         <p className="text-md  lg:text-md font-normal text-gray-400 tracking-tight mb-4 leading-relaxed">versatile experience across diverse projects and industries adaptability and valuable Skills to any task.</p>
 
                         <div className="mt-10 flex flex-row justify-center items-center lg:items-start">

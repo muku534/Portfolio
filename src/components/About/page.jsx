@@ -18,11 +18,7 @@ const page = () => {
                         <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Working experience</h1>
                         <div className="lg:mt-8">
                             <div className="flex items-center">
-                                {/* <Avatar
-                                    isBordered
-                                    radius="sm"
-                                    src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                                /> */}
+
                                 <div className="bg-gray-200 p-2 rounded-lg">
                                     <ModelTrainingIcon />
                                 </div>
@@ -33,14 +29,10 @@ const page = () => {
                                     <p className="text-sm font-normal text-gray-400">May 2023 - July 2023</p>
                                 </div>
                             </div>
-                            <hr className="mt-4 border-gray-300  mr-36" />
+                            <hr className="mt-4 border-gray-300  lg:mr-36 md:mr-3" />
 
                             <div className="flex mt-4  items-center">
-                                {/* <Avatar
-                                    isBordered
-                                    radius="sm"
-                                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                                /> */}
+
                                 <div className="bg-gray-200 p-2 rounded-lg">
                                     <WorkIcon className='inline' />
                                 </div>
@@ -59,11 +51,7 @@ const page = () => {
                         <p className="text-2xl lg:ml-10 lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">Qualifications</p>
                         <div className="lg:ml-10 lg:mt-8">
                             <div className="flex items-center">
-                                {/* <Avatar
-                                    isBordered
-                                    radius="sm"
-                                    src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                                /> */}
+
                                 <div className="bg-gray-200 p-2 rounded-lg">
                                     <SchoolIcon />
                                 </div>
@@ -72,15 +60,9 @@ const page = () => {
                                     <p className="text-sm font-normal text-gray-400">2020</p>
                                 </div>
                             </div>
-                            <hr className="mt-4 border-gray-300  mr-40" />
-
-
+                            <hr className="mt-4 border-gray-300  lg:mr-36 md:mr-3" />
                             <div className="flex mt-4  items-center">
-                                {/* <Avatar
-                                    isBordered
-                                    radius="sm"
-                                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                                /> */}
+
                                 <div className="bg-gray-200 p-2 rounded-lg">
                                     <SchoolIcon />
                                 </div>
@@ -89,14 +71,9 @@ const page = () => {
                                     <p className="text-sm font-normal text-gray-400">2020 - 2023</p>
                                 </div>
                             </div>
-                            <hr className="mt-4 border-gray-300  mr-40" />
-
+                            <hr className="mt-4 border-gray-300  lg:mr-36 md:mr-3" />
                             <div className="flex mt-4  items-center">
-                                {/* <Avatar
-                                    isBordered
-                                    radius="sm"
-                                    src="https://i.pravatar.cc/150?u=a04258114e29026702d"
-                                /> */}
+
                                 <div className="bg-gray-200 p-2 rounded-lg">
                                     <SchoolIcon />
                                 </div>
@@ -108,49 +85,8 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            </section >
-            <div className="pt-20 bg-gray-50 pb-10 p-5">
-                <div className="flex flex-row  lg:px-32 w-full justify-between">
-                    <div className=" lg:ml-5  items-center">
-                        <h1 className="text-2xl lg:text-3xl font-normal leading-tight tracking-tight text-gray-900 dark:text-text-gray-900 mb-4">I can help you with</h1>
-                    </div>
-                    <div className="items-center">
-                        <Link href="https://github.com/muku534" className="text-gray-700 ml-5 justify-center inline-flex items-center font-medium rounded-lg text-sm px-2 py-1.5 text-center dark:bg-primary-600 border border-gray-400 border-solid border-2" role="button">
-                            See my work
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="flex lg:flex-row flex-col lg:px-32 w-full justify-between">
-                    <div className="lg:w-1/2 lg:pr-10 lg:px-10 flex flex-col ">
-                        <div className="flex mt-4 mb-5 lg:ml-5 items-center">
-                            <Avatar
-                                radius="sm"
-                                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                            />
-                            <div className="ml-4">
-                                <h1 className="text-xl lg:text-xl font-normal leading-tight tracking-tight text-gray-7 00 dark:text-text-gray-700 mb-4">Full page web site design</h1>
-                            </div>
-                        </div>
-                        <div className="lg:pl-5">
-                            <Image src="/assets/demo.png" width={450} height={450} />
-                        </div>
-                    </div>
-                    <div className="w-full lg:w-1/2 lg:px-14  items-center">
-                        <div className="flex mt-4 mb-5 lg:ml-5 items-center">
-                            <div className="">
-                                <p className="text-sm font-normal text-gray-400">crafting immersive and engaging full-page website design that captivate audiences and deliver a seamless user experience</p>
-                            </div>
-                        </div>
-                        <div className="lg:pl-5">
-                            <Image src="/assets/demo2.png" width={450} height={450} />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div >
+            </section>
+        </div>
     )
 }
 
