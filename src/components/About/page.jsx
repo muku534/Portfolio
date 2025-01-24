@@ -100,9 +100,10 @@ const page = () => {
                                     </div>
                                 </div>
                                 <p className="text-sm font-normal text-gray-600 mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-1000 ease-in-out">
-                                    Currently pursuing a Master's degree in Computer Applications with a focus on software development and app development.
+                                    Currently pursuing a Master&apos;s degree in Computer Applications with a focus on software development and app development.
                                     Exploring advanced technologies and frameworks to develop impactful and user-friendly applications.
                                 </p>
+
                             </div>
 
                             <hr className="border-gray-300" />
@@ -121,7 +122,7 @@ const page = () => {
                                     </div>
                                 </div>
                                 <p className="text-sm font-normal text-gray-600 mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-1000 ease-in-out">
-                                    Completed Bachelor's degree in Computer Applications, with an average CGPA of 7.2 Gained hands-on experience in web development and cross-platform mobile applications.
+                                    Completed Bachelor&apos;s degree in Computer Applications, with an average CGPA of 7.2. Gained hands-on experience in web development and cross-platform mobile applications.
                                     Specialized in React Native, Node.js, and MongoDB during various course projects.
                                 </p>
                             </div>

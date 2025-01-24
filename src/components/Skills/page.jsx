@@ -18,89 +18,87 @@ const Skills = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:mt-5 lg:mb-5 lg:grid-cols-7 gap-8">
                     {/* Skill Item 1 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/HTML5.png" alt="HTML" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/HTML5.png" alt="HTML" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">HTML</span>
                     </div>
 
                     {/* Skill Item 2 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/CSS3.png" alt="CSS" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/CSS3.png" alt="CSS" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">CSS</span>
                     </div>
 
                     {/* Skill Item 3 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/JavaScript.png" alt="JavaScript" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/JavaScript.png" alt="JavaScript" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">JavaScript</span>
                     </div>
 
                     {/* Skill Item 4 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/React.js.png" alt="React.js" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/React.js.png" alt="React.js" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">React.js</span>
                     </div>
 
                     {/* Skill Item 5 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/Node.js.png" alt="Node.js" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/Node.js.png" alt="Node.js" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">Node.js</span>
                     </div>
 
                     {/* Skill Item 6 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/Firebase.png" alt="Firebase" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/Firebase.png" alt="Firebase" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">Firebase</span>
                     </div>
 
                     {/* Skill Item 7 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/Git.png" alt="Git" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/Git.png" alt="Git" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">Git</span>
                     </div>
 
                     {/* Skill Item 8 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/GitHub.png" alt="GitHub" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/GitHub.png" alt="GitHub" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">GitHub</span>
                     </div>
 
                     {/* Skill Item 9 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/jQuery.png" alt="jQuery" className="w-12 h-12 object-contain" />
+                        <Image src="/Logo/jQuery.png" alt="jQuery" width={48} height={48} className="object-contain" />
                         <span className="ml-2 text-gray-700">jQuery</span>
-                    </div>
-
-                    {/* Skill Item 9 */}
-                    <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/MongoDB.png" alt="MongoDB" className="w-12 h-12 object-contain" />
-                        <span className="ml-2 text-gray-700">MongoDB</span>
                     </div>
 
                     {/* Skill Item 10 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/Next.js.png" alt="Next.js" className="w-12 h-12 object-contain" />
-                        <span className="ml-2 text-gray-700">Next.js</span>
+                        <Image src="/Logo/MongoDB.png" alt="MongoDB" width={48} height={48} className="object-contain" />
+                        <span className="ml-2 text-gray-700">MongoDB</span>
                     </div>
 
                     {/* Skill Item 11 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/ReactNative.png" alt="ReactNative" className="w-12 h-12 object-contain" />
-                        <span className="ml-2 text-gray-700">ReactNative</span>
+                        <Image src="/Logo/Next.js.png" alt="Next.js" width={48} height={48} className="object-contain" />
+                        <span className="ml-2 text-gray-700">Next.js</span>
                     </div>
 
                     {/* Skill Item 12 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/Redux.png" alt="Redux" className="w-12 h-12 object-contain" />
-                        <span className="ml-2 text-gray-700">Redux</span>
+                        <Image src="/Logo/ReactNative.png" alt="ReactNative" width={48} height={48} className="object-contain" />
+                        <span className="ml-2 text-gray-700">ReactNative</span>
                     </div>
 
                     {/* Skill Item 13 */}
                     <div className="flex items-center justify-center text-center">
-                        <img src="/Logo/Tailwind CSS.png" alt="Tailwind CSS" className="w-12 h-12 object-contain" />
-                        <span className="ml-2 text-gray-700">Tailwind CSS</span>
+                        <Image src="/Logo/Redux.png" alt="Redux" width={48} height={48} className="object-contain" />
+                        <span className="ml-2 text-gray-700">Redux</span>
                     </div>
 
-                    {/* Repeat for additional skills */}
+                    {/* Skill Item 14 */}
+                    <div className="flex items-center justify-center text-center">
+                        <Image src="/Logo/Tailwind CSS.png" alt="Tailwind CSS" width={48} height={48} className="object-contain" />
+                        <span className="ml-2 text-gray-700">Tailwind CSS</span>
+                    </div>
                 </div>
             </div>
         </div>
