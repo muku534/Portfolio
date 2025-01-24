@@ -9,6 +9,7 @@ import Resume from "@/components/Resume/page"
 import Projects from "@/components/Projects/page"
 import { Avatar } from '@nextui-org/react';
 import Phone from '../PhoneLayout/Page';
+import Skills from '../Skills/page';
 
 export default function Home() {
     const [isTyping, setIsTyping] = useState(false);
@@ -42,17 +43,17 @@ export default function Home() {
 
     return (
         <>
-            <main id="Home" className="flex w-full flex-col lg:flex-row mt-10 lg:mt-44 lg:mb-20 justify-center items-center ">
+            <main id="Home" className="flex w-full flex-col lg:flex-row  lg:mt-20 lg:px-4 lg:py-20 py-10 lg:mb-10 justify-center items-center ">
                 <div className="lg:w-1/2 lg:pr-10 lg:px-32 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-                    <div className="lg:mb-10 ml-5 pr-5 justify-center items-center mt-16 lg:mt-0"> {/* Add mt-5 for small and medium screens */}
-                        <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" className='mb-5' />
+                    <div className="ml-5 pr-5 justify-center items-center mt-16 lg:mt-0"> {/* Add mt-5 for small and medium screens */}
+                        <Avatar src="/assets/Profile.jpg" className='mb-5' />
                         <h1 className="text-3xl lg:text-5xl line-clamp-3 font-normal leading-tight lg:leading-snug tracking-tight text-start text-gray-900 dark:text-text-gray-900 mb-8 lg:mb-14">Hello! I&apos;m Mukesh Prajapati </h1>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:px-14 justify-center items-center">
                     <div className='mb-10 ml-5 justify-center items-center'>
-                        <p className="text-3xl lg:ml-10 lg:text-4xl font-normal text-gray-900 tracking-tight mb-4 lg:leading-relaxed">A Junior React Native Developer based in Surat, India.</p>
-                        <p className="text-md lg:ml-10 lg:text-md font-normal text-gray-400 tracking-tight mb-4 lg:leading-relaxed">Passionate about software development.</p>
+                        <p className="text-3xl lg:ml-10 lg:text-4xl font-normal text-gray-900 tracking-tight mb-4 lg:leading-tight">A Junior React Native Developer based in Surat, India.</p>
+                        <p className="text-md lg:ml-10 lg:text-md font-normal text-gray-500 tracking-tight mb-4 lg:leading-relaxed"> Driven by a love for clean code, user-friendly design, and continuous learning.</p>
 
                         <div className="mt-10 flex flex-row  items-center lg:ml-10  lg:items-start">
                             <button href="#" onClick={() => setShowPhone(!showPhone)} className="text-gray-100 bg-gray-900 justify-center  inline-flex items-center  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 " role="button">
@@ -75,6 +76,7 @@ export default function Home() {
             <div>
                 <About />
                 <Resume togglePhone={() => setShowPhone(!showPhone)} />
+                <Skills />
                 <Projects />
             </div>
         </>

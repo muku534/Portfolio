@@ -7,42 +7,49 @@ import { Avatar } from "@nextui-org/react";
 const page = () => {
     const list = [
         {
-            title: "ResumeCraft",
-            technology: "Next.js, Firebase",
-            description: "Introducing ResumeCraft, where crafting a professional resume has never been easier. With a selection of three ATS-friendly templates, our platform offers a seamless experience for users to input their information using the intuitive editor powered by OverLeaf. Designed for both simplicity and effectiveness, our templates ensure your resume stands out to employers and passes through Applicant Tracking Systems effortlessly. Best of all, our service is completely free – no hidden fees or subscriptions required. Download your personalized resume as a PDF with just one click and take the next step towards securing your dream job.",
-            Github: "https://github.com/muku534/ResumeCraft"
+            title: "FreshWave",
+            technology: "React Native, Firebase, REST APIs, Android Studio",
+            description: "FreshWave is an e-commerce platform designed for selling laundry soap and liquid products. The app features product listings, detailed views, cart management, and a streamlined checkout experience. It also offers robust user authentication, including login, signup, and password recovery. Profile management allows users to edit and delete accounts, while invoice generation enables seamless PDF downloads after purchases. Optimized for performance and app size, FreshWave ensures a smooth experience across devices.",
+            Github: "https://github.com/muku534"
         },
         {
-            title: "CallVerse",
-            technology: "React Native, Firebase",
-            description: "Developed CallVerse (Chat App), a chat application using React Native CLI and Firebase. The application features a unique offering where users are provided with random phone numbers for secure communication, prioritizing privacy. The app allows user registration and sign-in using unique identifiers or registered email. It also includes robust search functionality for easy contact discovery and connection, and users can also add contacts. Real-time messaging capabilities were integrated for seamless conversations. Additionally, the app facilitates the sharing of images and videos, enhancing the user experience.",
-            Github: "https://github.com/muku534/CallverseNative"
-        },
-        {
-            title: "SCS (Sustainable Computer Solution)",
-            technology: "React Native CLI, Firebase, Redux",
-            description: "Introducing SCS (Sustainable Computer Solutions), an innovative e-commerce application tailored for IT companies and universities. SCS serves as a comprehensive platform facilitating the seamless selling, inspection, repair, and customization of computer systems. With a focus on ensuring all systems are in prime working condition, SCS not only promotes technology accessibility but also contributes to sustainability by facilitating the resale of systems. By fostering the accessibility of cutting-edge technology, SCS plays a pivotal role in promoting sustainability and technological advancement.",
-            Github: "https://github.com/muku534/bug-free-adventure-app"
+            title: "join-Social: Activity and Event Management",
+            technology: "React Native, Firebase, REST APIs, Android Studio",
+            description: "join-Social is an event management app that allows users to create, share, and join events for various social activities. The app includes features like social login for easy sign-up, event creation and posting, and the ability to interact with events through likes, shares, and comments. Users can join events, connect with other attendees via chat, and receive real-time push notifications. The app also supports sending friend requests and event participation requests, fostering a vibrant social community.",
+            Github: "https://github.com/muku534"
         },
         {
             title: "MarketChat",
             technology: "React Native CLI, Rest APIs, Firebase",
-            description: "MarketChat is a dynamic social media platform designed for connecting people, creating communities, and facilitating various forms of expression. With features like friend discovery, page creation, group joining, event organization, and seamless content sharing, MarketChat offers a comprehensive social experience. Real-time notifications, intuitive chat, and robust privacy controls ensure a safe and engaging environment. As a key contributor to MarketChat's development, I played a pivotal role in shaping its features and functionalities, contributing to its success in the competitive social media landscape.",
+            description: "MarketChat is a dynamic social media platform tailored to foster communication, create communities, and facilitate diverse forms of expression. It features friend discovery, page creation, group participation, event organization, and content sharing. Real-time notifications, secure chat functionality, and advanced privacy controls ensure a safe and engaging user experience. My contributions to the development of MarketChat helped shape its features, enhancing its competitiveness in the social media landscape.",
             Github: "https://github.com/muku534"
+        },
+        {
+            title: "CallVerse",
+            technology: "React Native, Firebase",
+            description: "CallVerse is a unique privacy-first chat app built with React Native CLI and Firebase, offering users random phone numbers for secure, anonymous communication. The app supports user registration and login with unique identifiers or emails. Key features include real-time messaging, media sharing (images and videos), and a robust search function for easy contact discovery. CallVerse ensures a seamless, private chat experience while maintaining high standards of security.",
+            Github: "https://github.com/muku534/CallverseNative"
         },
         {
             title: "rn-toastify",
             technology: "React Native CLI",
-            description: "rn-toastify is a versatile and animated toast notification component built for React Native applications. It offers an intuitive API with features like customizable layouts, flexible configuration, and promise handling for asynchronous actions. The component provides various toast types, including success, error, and custom toasts, all designed to enhance the user experience with seamless notifications. Its simple setup, position control, and emoji support make it a flexible tool for mobile app developers looking to integrate toast messages.",
+            description: "rn-toastify is an animated toast notification component for React Native apps, offering a customizable and user-friendly API. It supports a variety of toast types such as success, error, and custom notifications, enhancing user interaction. Features include flexible configuration, promise handling for asynchronous actions, and easy integration with React Native apps. With position control, emoji support, and simple setup, rn-toastify is an essential tool for developers seeking to implement notifications seamlessly.",
             Github: "https://www.npmjs.com/package/rn-toastify"
         },
         {
             title: "PixelVista",
-            technology: " React Native CLI, Pexels API, Redux",
-            description: "PixelVista is a mobile wallpaper application built using React Native CLI, leveraging the Pexels REST API to provide users with a vast collection of high-quality wallpapers. Users can browse, search, and download wallpapers directly to their devices. The app implements Redux for state management, ensuring a smooth user experience by efficiently handling user preferences, downloaded wallpapers, and API data. With a focus on intuitive design and performance, PixelVista offers seamless navigation and personalized collections for users to explore their favorite categories and styles.",
+            technology: "React Native CLI, Pexels API, Redux",
+            description: "PixelVista is a mobile wallpaper application that provides users with a curated collection of high-quality wallpapers from the Pexels API. Built with React Native CLI and Redux, the app allows users to search, browse, and download wallpapers directly to their devices. It offers personalized collections based on user preferences, ensuring an intuitive and seamless experience. PixelVista combines design, performance, and customization, making it a must-have app for wallpaper enthusiasts.",
             Github: "https://github.com/muku534/PixelVista"
         },
+        {
+            title: "SCS (Sustainable Computer Solution)",
+            technology: "React Native CLI, Firebase, Redux",
+            description: "SCS (Sustainable Computer Solutions) is an e-commerce platform designed for IT companies and universities, enabling the sale, inspection, repair, and customization of computer systems. Focused on sustainability, the app facilitates the resale of technology while ensuring each system is in prime working condition. By promoting access to affordable technology, SCS contributes to a more sustainable tech ecosystem, bridging the gap between sustainability and innovation.",
+            Github: "https://github.com/muku534/bug-free-adventure-app"
+        },
     ];
+
 
     const handleCardClick = (link) => {
         window.open(link, "_blank");
@@ -50,16 +57,16 @@ const page = () => {
 
     return (
         <div id="Projects">
-            <section className="bg-gray-50">
+            <section>
                 <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-5 mt-10">
                     <div className="max-w-2xl lg:pt-10 mx-auto text-center">
                         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-gray-800">
-                            Selected Works
+                            Featured Projects
                         </h2>
-                        <p className="text-md mt-4 lg:text-md font-normal text-gray-400 tracking-tight mb-4 leading-relaxed">
-                            Discover a variety of projects demonstrating my skills and enthusiasm for technology.
-                            From <span className="font-semibold">web development</span> to <span className="font-semibold">mobile apps</span>,
-                            each project represents a <span className="font-semibold">step forward</span> in my journey as a developer.
+                        <p className="text-md mt-4 lg:text-md font-normal text-gray-500 tracking-tight mb-4 leading-relaxed">
+                            Explore a curated selection of my projects, each showcasing my dedication and expertise in technology. From
+                            <span className="font-semibold text-gray-700"> web development</span> to <span className="font-semibold text-gray-700"> mobile applications</span>,
+                            every project reflects my continuous growth and passion for innovation as a developer.
                         </p>
                     </div>
 

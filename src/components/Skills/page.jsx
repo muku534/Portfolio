@@ -1,43 +1,110 @@
 "use client";
 
-
 import React from 'react';
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Image from "next/image";
 
-const page = () => {
+const Skills = () => {
     return (
-        <div className="flex justify-center">
-            <section className="text-gray-400 body-font lg:ml-5 lg:pl-10">
-                <h1 className="title-font sm:text-3xl text-3xl mb-1 font-extrabold text-gray-800">Skills</h1>
-                <div className="container px-5 mx-auto flex flex-wrap">
-                    <div className="flex flex-wrap lg:pl-14 lg:m-4 -m-4">
-                        {/* Icon components representing skills */}
-                        <SkillIcon src="/Logo/CSS3.png" alt="CSS3" />
-                        <SkillIcon src="/Logo/Firebase.png" alt="Firebase" />
-                        <SkillIcon src="/Logo/Git.png" alt="Git" />
-                        <SkillIcon src="/Logo/GitHub.png" alt="GitHub" />
-                        <SkillIcon src="/Logo/HTML5.png" alt="HTML5" />
-                        <SkillIcon src="/Logo/JavaScript.png" alt="JavaScript" />
-                        <SkillIcon src="/Logo/jQuery.png" alt="jQuery" />
-                        <SkillIcon src="/Logo/React.js.png" alt="React.js" />
-                        <SkillIcon src="/Logo/Next.js.png" alt="Next.js" />
-                        <SkillIcon src="/Logo/Node.js.png" alt="Node.js" />
-                        <SkillIcon src="/Logo/Reactnative.png" alt="React Native" />
-                        <SkillIcon src="/Logo/MongoDB.png" alt="MongoDB" />
-                        <SkillIcon src="/Logo/Redux.png" alt="Redux" />
-                        <SkillIcon src="/Logo/Tailwind CSS.png" alt="Tailwind CSS" />
+        <div id="Skills">
+            <div className="flex flex-col w-full px-4 py-16" style={{ backgroundColor: '#F5F5F0' }}>
+                <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl dark:text-gray-800 text-center">
+                    My Skills
+                </h2>
+                <p className="text-md mt-4 lg:text-md text-gray-400 text-center mb-8">
+                    A glimpse of the tools and technologies I use to craft high-quality software solutions.
+                </p>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:mt-5 lg:mb-5 lg:grid-cols-7 gap-8">
+                    {/* Skill Item 1 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/HTML5.png" alt="HTML" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">HTML</span>
                     </div>
+
+                    {/* Skill Item 2 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/CSS3.png" alt="CSS" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">CSS</span>
+                    </div>
+
+                    {/* Skill Item 3 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/JavaScript.png" alt="JavaScript" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">JavaScript</span>
+                    </div>
+
+                    {/* Skill Item 4 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/React.js.png" alt="React.js" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">React.js</span>
+                    </div>
+
+                    {/* Skill Item 5 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/Node.js.png" alt="Node.js" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">Node.js</span>
+                    </div>
+
+                    {/* Skill Item 6 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/Firebase.png" alt="Firebase" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">Firebase</span>
+                    </div>
+
+                    {/* Skill Item 7 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/Git.png" alt="Git" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">Git</span>
+                    </div>
+
+                    {/* Skill Item 8 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/GitHub.png" alt="GitHub" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">GitHub</span>
+                    </div>
+
+                    {/* Skill Item 9 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/jQuery.png" alt="jQuery" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">jQuery</span>
+                    </div>
+
+                    {/* Skill Item 9 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/MongoDB.png" alt="MongoDB" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">MongoDB</span>
+                    </div>
+
+                    {/* Skill Item 10 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/Next.js.png" alt="Next.js" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">Next.js</span>
+                    </div>
+
+                    {/* Skill Item 11 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/ReactNative.png" alt="ReactNative" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">ReactNative</span>
+                    </div>
+
+                    {/* Skill Item 12 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/Redux.png" alt="Redux" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">Redux</span>
+                    </div>
+
+                    {/* Skill Item 13 */}
+                    <div className="flex items-center justify-center text-center">
+                        <img src="/Logo/Tailwind CSS.png" alt="Tailwind CSS" className="w-12 h-12 object-contain" />
+                        <span className="ml-2 text-gray-700">Tailwind CSS</span>
+                    </div>
+
+                    {/* Repeat for additional skills */}
                 </div>
-            </section>
+            </div>
         </div>
+
     )
 }
-
-const SkillIcon = ({ src, alt }) => {
-    return (
-        <div className="p-8 lg:w-1/6 md:w-1/3 w-1/3">
-            <img src={src} alt={alt} className="w-full h-full object-contain" />
-        </div>
-    )
-};
-
-export default page
+export default Skills
