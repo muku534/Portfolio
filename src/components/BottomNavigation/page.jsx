@@ -2,86 +2,154 @@
 
 import { useEffect, useState } from "react";
 import { Link as ScrollLink, Events } from "react-scroll";
-import LinkIcon from '@mui/icons-material/Link';
-import FolderZipIcon from '@mui/icons-material/FolderZip';
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import { motion } from "framer-motion";
+import { FaHome, FaUser, FaEnvelope, FaFolderOpen, FaRegLightbulb } from "react-icons/fa";
 
 const BottomNavigation = () => {
-    // State to track the active section
-    const [activeSection, setActiveSection] = useState('Home');
+    const [activeSection, setActiveSection] = useState("Home");
 
-    // Effect to track active section changes
     useEffect(() => {
-        Events.scrollEvent.register('begin', function (to) {
+        Events.scrollEvent.register("begin", (to) => {
             setActiveSection(to);
         });
 
-        // Cleanup to prevent memory leaks
         return () => {
-            Events.scrollEvent.remove('begin');
+            Events.scrollEvent.remove("begin");
         };
     }, []);
 
-    // Function to determine the icon color based on the active section
-    const getIconColor = (section) => {
-        return activeSection === section ? 'text-blue-600' : 'text-gray-500';
+    // Adjust the icon color logic
+    const getIconColor = (section) =>
+        activeSection === section
+            ? "text-black dark:text-white" // Black for light mode, white for dark mode
+            : "text-gray-500 dark:text-gray-400";
+
+    const iconVariants = {
+        initial: { scale: 1 },
+        hover: { scale: 1.2, transition: { type: "spring", stiffness: 300 } },
+        active: { scale: 1.4, transition: { type: "spring", stiffness: 300 } },
     };
 
     return (
-        <div className="fixed z-50 w-full h-12 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-2 left-1/2 dark:bg-gray-700 dark:border-gray-600">
-            <div className="grid h-full max-w-lg grid-cols-4 mx-auto">
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="fixed z-50 bottom-2 transform -translate-x-1/2 w-full max-w-lg"
+        >
+            <div className="bg-white dark:bg-gray-800 shadow-2xl dark:shadow-lg rounded-full px-4 py-3 flex justify-between items-center gap-4 mx-auto">
+                {/* Home */}
                 <ScrollLink
-                    to="Home" // ID of the Home section
+                    to="Home"
                     smooth={true}
                     duration={500}
                     offset={-30}
                     role="button"
-                    className="inline-flex flex-col items-center justify-center px-3 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                    className="flex flex-col items-center group"
                 >
-                    <HomeOutlinedIcon className={`mb-1 ${getIconColor('Home')} dark:text-gray-400 group-hover:${getIconColor('Home')}`} />
-                    <span className="sr-only">Home</span>
+                    <motion.div
+                        variants={iconVariants}
+                        initial="initial"
+                        whileHover="hover"
+                        animate={activeSection === "Home" ? "active" : "initial"}
+                        className={`text-2xl transition-colors duration-300 ${getIconColor(
+                            "Home"
+                        )}`}
+                    >
+                        <FaHome />
+                    </motion.div>
                 </ScrollLink>
 
+                {/* About */}
                 <ScrollLink
-                    to="About" // ID of the About section
+                    to="About"
                     smooth={true}
                     duration={500}
                     offset={-30}
                     role="button"
-                    className="inline-flex flex-col items-center justify-center px-3 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                    className="flex flex-col items-center group"
                 >
-                    <ConnectWithoutContactIcon className={`mb-1 ${getIconColor('About')} dark:text-gray-400 group-hover:${getIconColor('About')}`} />
-                    <span className="sr-only">Profile</span>
+                    <motion.div
+                        variants={iconVariants}
+                        initial="initial"
+                        whileHover="hover"
+                        animate={activeSection === "About" ? "active" : "initial"}
+                        className={`text-2xl transition-colors duration-300 ${getIconColor(
+                            "About"
+                        )}`}
+                    >
+                        <FaUser />
+                    </motion.div>
                 </ScrollLink>
 
+                {/* Skills */}
                 <ScrollLink
-                    to="Projects" // ID of the Projects section
+                    to="Skills"
                     smooth={true}
                     duration={500}
                     offset={-30}
                     role="button"
-                    className="inline-flex flex-col items-center justify-center px-3 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                    className="flex flex-col items-center group"
                 >
-                    <AccountTreeIcon className={`mb-1 ${getIconColor('Projects')} dark:text-gray-400 group-hover:${getIconColor('Projects')}`} />
-                    <span className="sr-only">Projects</span>
+                    <motion.div
+                        variants={iconVariants}
+                        initial="initial"
+                        whileHover="hover"
+                        animate={activeSection === "Skills" ? "active" : "initial"}
+                        className={`text-2xl transition-colors duration-300 ${getIconColor(
+                            "Skills"
+                        )}`}
+                    >
+                        <FaRegLightbulb />
+                    </motion.div>
                 </ScrollLink>
 
+                {/* Projects */}
                 <ScrollLink
-                    to="Footer" // ID of the Footer section
+                    to="Projects"
                     smooth={true}
                     duration={500}
                     offset={-30}
                     role="button"
-                    className="inline-flex flex-col items-center justify-center px-3 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 group"
+                    className="flex flex-col items-center group"
                 >
-                    <LinkIcon className={`mb-1 ${getIconColor('Footer')} dark:text-gray-400 group-hover:${getIconColor('Footer')}`} />
-                    <span className="sr-only">Link</span>
+                    <motion.div
+                        variants={iconVariants}
+                        initial="initial"
+                        whileHover="hover"
+                        animate={activeSection === "Projects" ? "active" : "initial"}
+                        className={`text-2xl transition-colors duration-300 ${getIconColor(
+                            "Projects"
+                        )}`}
+                    >
+                        <FaFolderOpen />
+                    </motion.div>
+                </ScrollLink>
+
+                {/* Contact */}
+                <ScrollLink
+                    to="Footer"
+                    smooth={true}
+                    duration={500}
+                    offset={-30}
+                    role="button"
+                    className="flex flex-col items-center group"
+                >
+                    <motion.div
+                        variants={iconVariants}
+                        initial="initial"
+                        whileHover="hover"
+                        animate={activeSection === "Footer" ? "active" : "initial"}
+                        className={`text-2xl transition-colors duration-300 ${getIconColor(
+                            "Footer"
+                        )}`}
+                    >
+                        <FaEnvelope />
+                    </motion.div>
                 </ScrollLink>
             </div>
-        </div>
+        </motion.div>
     );
-}
+};
 
 export default BottomNavigation;

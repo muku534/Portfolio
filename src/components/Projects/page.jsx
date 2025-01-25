@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import { Button, Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import { Avatar } from "@nextui-org/react";
 import { useState } from "react";
-import Phone from "../PhoneLayout/Page";
 import { motion, AnimatePresence } from "framer-motion";
 import Mockup from "../Mockups/Page";
+import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 
-const page = () => {
+const Page = () => {
     const [showModal, setShowModal] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
 
@@ -141,13 +140,14 @@ const page = () => {
                         exit={{ opacity: 0 }}
                     >
                         <motion.div
-                            className="bg-white rounded-lg shadow-lg p-6 max-w-4xl w-full flex flex-col lg:flex-row gap-6"
+                            className="bg-white rounded-lg shadow-lg p-4 md:p-6 lg:p-6 w-full flex flex-col lg:flex-row gap-6 lg:max-w-4xl md:max-w-2xl sm:max-w-xs sm:max-h-[90%] overflow-auto"
                             initial={{ scale: 0.9 }}
                             animate={{ scale: 1 }}
                             exit={{ scale: 0.9 }}
                         >
+
                             {/* Left Side: Image Conditionally render Mockup based on screen size*/}
-                            <div className="flex-1 flex justify-center items-center hidden lg:block">
+                            <div className="flex-1 flex justify-center items-center hidden lg:block md:block">
                                 <Mockup project={selectedProject} />
                             </div>
 
@@ -157,9 +157,9 @@ const page = () => {
                                     <h3 className="text-xl font-bold">{selectedProject.title}</h3>
                                     <button
                                         onClick={handleCloseModal}
-                                        className="text-gray-800 hover:text-gray-700"
+                                        className="text-gray-800 lg:text-3xl md:text-2xl text-xl hover:text-gray-700"
                                     >
-                                        ✕
+                                        <CancelOutlinedIcon className="inline" fontSize="large" />
                                     </button>
                                 </div>
                                 <p className="text-gray-600 mt-4">{selectedProject.description}</p>
@@ -185,4 +185,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
