@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react'
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar/page'
-import BottomNavigation from '@/components/BottomNavigation/page'
 import Footer from '@/components/Footer/page'
 import Head from 'next/head';
 import Link from "next/link";
 import { NextUIProvider } from "@nextui-org/react";
 import { siteMetadata } from './SitMetaData';
+import BottomNavigator from '@/components/BottomNavigation/page';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
           <Navbar scrolled={scrolled} isMobileOrTabletDevice={!isMobileOrTabletDevice} />
           {children}
-          {isMobileOrTabletDevice && <BottomNavigation />}
+          {isMobileOrTabletDevice && <BottomNavigator />}
           <Footer isMobileOrTabletDevice={isMobileOrTabletDevice} />
         </body>
       </NextUIProvider>

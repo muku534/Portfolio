@@ -12,7 +12,7 @@ const page = () => {
 
     return (
         <div id="About">
-            <section className="flex lg:flex-row flex-col w-full pt-14" style={{ backgroundColor: '#F5F5F0' }}>
+            <section className="flex lg:flex-row md:flex-row flex-col w-full pt-14" style={{ backgroundColor: '#F5F5F0' }}>
                 <div className="w-full lg:w-1/2 lg:px-20 p-5 items-center">
                     <div className="lg:ml-5">
                         <h1 className="text-2xl lg:text-4xl font-normal leading-tight tracking-tight text-gray-900 dark:text-gray-900 mb-4">

@@ -58,7 +58,7 @@ const Navbar = ({ isMobileOrTabletDevice, scrolled }) => {
                         <Image src="/assets/favicon.png" width={36} height={38} className="h-8 mr-8" alt="Logo" />
                     </ScrollLink>
 
-                    <div className="lg:w-1/2 lg:pl-5 flex-grow">
+                    <div className="lg:w-1/2 lg:pl-5 md:w-1/2 md:pl-5 flex-grow">
                         {isMobileOrTabletDevice && (
                             <ul className="flex flex-col font-medium p-4 md:p-0 lg:border-0 border border-gray-100 rounded-lg items-center bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
                                 <li>
@@ -130,7 +130,7 @@ const Navbar = ({ isMobileOrTabletDevice, scrolled }) => {
                     </div>
 
                     {/* Right part - Greeting and Resume Button */}
-                    <div className="w-full lg:w-1/2 lg:pl-5 flex md:ml-auto items-center ml-auto">
+                    <div className="w-full lg:w-1/2 lg:pl-5 md:w-1/2 md:pl-5 flex md:ml-auto items-center ml-auto">
                         <p className="text-gray-900 text-sm font-bold lg:text-md">
                             {currentTime ? `Hey ${greeting}, ${currentTime.toLocaleTimeString()}` : "Loading..."}
                         </p>
