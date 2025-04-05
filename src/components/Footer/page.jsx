@@ -18,13 +18,29 @@ const page = ({ isMobileOrTabletDevice }) => {
                     <span className="ml-3 text-xl text-gray-900 font-bold">Mukesh Prajapati</span>
                 </Link>
 
-                <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                    <Link href={"https://facebook.com/"} className="text-gray-700 hover:text-blue-600 transition-colors duration-300">
-                        <FacebookIcon />
+                <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start items-center">
+                    {/* Fiverr with gray default and green hover */}
+                    <Link href="https://www.fiverr.com/s/0b11YXE" target="_blank" rel="noopener noreferrer" className="ml-5 group">
+                        <div className="p-1 rounded-full bg-gray-700 transition-colors duration-300 group-hover:bg-[#1DBF73]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 50 50" fill="white">
+                                <path d="M25,2C12.32,2,2,12.32,2,25s10.32,23,23,23s23-10.32,23-23S37.68,2,25,2z M34,36h-6V25h-4v11h-6V25h-4v-6h4.04 c0.37-4.96,3.54-8,8.46-8h2.53v6H26.5c-0.92,0-2.14,0-2.43,2H34V36z" />
+                            </svg>
+                        </div>
                     </Link>
-                    <Link href={"https://twitter.com/"} className="ml-5 text-gray-700 hover:text-blue-400 transition-colors duration-300">
-                        <TwitterIcon />
+
+                    {/* Upwork with gray default and green hover */}
+                    <Link href="https://www.upwork.com/freelancers/~01f6f3520464637b36?mp_source=share" target="_blank" rel="noopener noreferrer" className="ml-5 group">
+                        <div className="p-1 rounded-full bg-gray-700 transition-colors duration-300 group-hover:bg-[#6FDA44]">
+                            <Image
+                                src="/logo/upwork.png"
+                                alt="Upwork"
+                                width={15}
+                                height={15}
+                                className="invert group-hover:invert-0 transition duration-300"
+                            />
+                        </div>
                     </Link>
+
                     <Link href={"https://www.linkedin.com/in/mukesh-prajapati-a6a670235/"} className="ml-5 text-gray-700 hover:text-blue-400 transition-colors duration-300">
                         <LinkedInIcon />
                     </Link>

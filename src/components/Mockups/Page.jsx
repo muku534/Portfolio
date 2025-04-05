@@ -22,8 +22,8 @@ export default function Mockup({ project }) {
     return (
         <div className="flex justify-center items-center w-full h-full relative">
             {/* Device Mockup Container */}
-            <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[500px] w-[250px] shadow-lg overflow-y-auto scrollbar-hide">
-                <div className="rounded-[2rem] overflow-hidden w-[250px] h-[470px] bg-white dark:bg-gray-800 flex justify-center items-center">
+            {/* <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[500px] w-[250px] shadow-lg overflow-y-auto scrollbar-hide"> */}
+                {/* <div className="rounded-[2rem] overflow-hidden w-[250px] h-[470px] bg-white dark:bg-gray-800 flex justify-center items-center"> */}
                     <div className="overflow-y-auto h-full flex justify-center items-center">
                         {/* Conditionally Render Image or Message */}
                         {project && project.mockups && project.mockups.length > 0 ? (
@@ -43,8 +43,8 @@ export default function Mockup({ project }) {
                             </div>
                         )}
                     </div>
-                </div>
-            </div>
+                {/* </div> */}
+            {/* </div> */}
 
             {project && project.mockups && project.mockups.length > 0 && (
                 <>

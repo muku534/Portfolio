@@ -13,6 +13,14 @@ const Page = () => {
 
     const list = [
         {
+            title: "Travelogger – AI-Powered Travel Planner",
+            technology: "React Native, Firebase, REST APIs, Android Studio, Xcode",
+            description: "Travelogger is a cross-platform travel planning app designed to streamline trip management with the help of AI. It offers smart itinerary suggestions, manual schedule customization, and personalized recommendations for destinations, dining, and attractions. Key features include Google Sign-In, OTP authentication, AI-powered search, and real-time plan updates. The app has been published on both the Play Store and App Store, ensuring a seamless and intuitive experience for travelers.",
+            PlayStore: "https://play.google.com/store/apps/details?id=com.yourapp.travelogger", // Replace with actual link
+            AppStore: "https://apps.apple.com/app/idXXXXXXXXX", // Replace with actual link
+            mockups: ["/Images/Travelogger/1.png", "/Images/Travelogger/2.png", "/Images/Travelogger/3.png", "/Images/Travelogger/4.png","/Images/Travelogger/5.png","/Images/Travelogger/6.png",]
+        },
+        {
             title: "FreshWave",
             technology: "React Native, Firebase, REST APIs, Android Studio",
             description: "FreshWave is an e-commerce platform designed for selling laundry soap and liquid products. The app features product listings, detailed views, cart management, and a streamlined checkout experience. It also offers robust user authentication, including login, signup, and password recovery. Profile management allows users to edit and delete accounts, while invoice generation enables seamless PDF downloads after purchases. Optimized for performance and app size, FreshWave ensures a smooth experience across devices.",
@@ -24,42 +32,42 @@ const Page = () => {
             technology: "React Native, Firebase, REST APIs, Android Studio",
             description: "join-Social is an event management app that allows users to create, share, and join events for various social activities. The app includes features like social login for easy sign-up, event creation and posting, and the ability to interact with events through likes, shares, and comments. Users can join events, connect with other attendees via chat, and receive real-time push notifications. The app also supports sending friend requests and event participation requests, fostering a vibrant social community.",
             PlayStore: "https://play.google.com/store/apps/details?id=com.applab.joinapp",
-            mockup: null,
+            mockups: ["/Images/Join/Join1.webp", "/Images/Join/Join2.webp", "/Images/Join/Join3.webp", "/Images/Join/Join4.webp", "/Images/Join/Join5.webp"],
         },
         {
             title: "MarketChat",
             technology: "React Native CLI, Rest APIs, Firebase",
             description: "MarketChat is a dynamic social media platform tailored to foster communication, create communities, and facilitate diverse forms of expression. It features friend discovery, page creation, group participation, event organization, and content sharing. Real-time notifications, secure chat functionality, and advanced privacy controls ensure a safe and engaging user experience. My contributions to the development of MarketChat helped shape its features, enhancing its competitiveness in the social media landscape.",
             Github: "https://github.com/muku534",
-            mockup: null,
+            mockups: null,
         },
         {
             title: "CallVerse",
             technology: "React Native, Firebase",
             description: "CallVerse is a unique privacy-first chat app built with React Native CLI and Firebase, offering users random phone numbers for secure, anonymous communication. The app supports user registration and login with unique identifiers or emails. Key features include real-time messaging, media sharing (images and videos), and a robust search function for easy contact discovery. CallVerse ensures a seamless, private chat experience while maintaining high standards of security.",
             Github: "https://github.com/muku534/CallverseNative",
-            mockup: null,
+            mockups: null,
         },
         {
             title: "rn-toastify",
             technology: "React Native CLI",
             description: "rn-toastify is an animated toast notification component for React Native apps, offering a customizable and user-friendly API. It supports a variety of toast types such as success, error, and custom notifications, enhancing user interaction. Features include flexible configuration, promise handling for asynchronous actions, and easy integration with React Native apps. With position control, emoji support, and simple setup, rn-toastify is an essential tool for developers seeking to implement notifications seamlessly.",
             Github: "https://www.npmjs.com/package/rn-toastify",
-            mockup: null,
+            mockups: null,
         },
         {
             title: "PixelVista",
             technology: "React Native CLI, Pexels API, Redux",
             description: "PixelVista is a mobile wallpaper application that provides users with a curated collection of high-quality wallpapers from the Pexels API. Built with React Native CLI and Redux, the app allows users to search, browse, and download wallpapers directly to their devices. It offers personalized collections based on user preferences, ensuring an intuitive and seamless experience. PixelVista combines design, performance, and customization, making it a must-have app for wallpaper enthusiasts.",
             Github: "https://github.com/muku534/PixelVista",
-            mockup: null,
+            mockups: null,
         },
         {
             title: "SCS (Sustainable Computer Solution)",
             technology: "React Native CLI, Firebase, Redux",
             description: "SCS (Sustainable Computer Solutions) is an e-commerce platform designed for IT companies and universities, enabling the sale, inspection, repair, and customization of computer systems. Focused on sustainability, the app facilitates the resale of technology while ensuring each system is in prime working condition. By promoting access to affordable technology, SCS contributes to a more sustainable tech ecosystem, bridging the gap between sustainability and innovation.",
             Github: "https://github.com/muku534/bug-free-adventure-app",
-            mockup: null,
+            mockups: null,
         },
     ];
 
