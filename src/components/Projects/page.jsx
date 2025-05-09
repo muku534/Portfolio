@@ -16,8 +16,8 @@ const Page = () => {
             title: "Travelogger – AI-Powered Travel Planner",
             technology: "React Native, Firebase, REST APIs, Android Studio, Xcode",
             description: "Travelogger is a cross-platform travel planning app designed to streamline trip management with the help of AI. It offers smart itinerary suggestions, manual schedule customization, and personalized recommendations for destinations, dining, and attractions. Key features include Google Sign-In, OTP authentication, AI-powered search, and real-time plan updates. The app has been published on both the Play Store and App Store, ensuring a seamless and intuitive experience for travelers.",
-            PlayStore: "https://play.google.com/store/apps/details?id=com.yourapp.travelogger", // Replace with actual link
-            AppStore: "https://apps.apple.com/app/idXXXXXXXXX", // Replace with actual link
+            PlayStore: "https://play.google.com/store/apps/details?id=com.travelogger", // Replace with actual link
+            AppStore: "", // Replace with actual link
             mockups: ["/Images/Travelogger/1.png", "/Images/Travelogger/2.png", "/Images/Travelogger/3.png", "/Images/Travelogger/4.png","/Images/Travelogger/5.png","/Images/Travelogger/6.png",]
         },
         {

@@ -29,7 +29,7 @@ const page = () => {
                                         <h3 className="text-sm text-gray-700 font-semibold">
                                             <span className="font-bold text-gray-900">Freelance</span> React Native Developer
                                         </h3>
-                                        <p className="text-sm font-normal text-gray-500">Feb 2024 - Present</p>
+                                        <p className="text-sm font-normal text-gray-500">April 2024 - Present</p>
                                     </div>
                                 </div>
                                 <p className="text-sm font-normal text-gray-600 mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 group-hover:mt-4 transition-all duration-700 ease-[cubic-bezier(0.25, 1, 0.5, 1)]">
@@ -49,7 +49,7 @@ const page = () => {
                                         <h3 className="text-sm text-gray-700 font-semibold">
                                             Junior React Native Developer at <span className="font-bold text-gray-900">Blockchaindev</span>
                                         </h3>
-                                        <p className="text-sm font-normal text-gray-500">Aug 2023 - Feb 2024</p>
+                                        <p className="text-sm font-normal text-gray-500">Aug 2023 - March 2024</p>
                                     </div>
                                 </div>
                                 <p className="text-sm font-normal text-gray-600 mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 group-hover:mt-4 transition-all duration-700 ease-[cubic-bezier(0.25, 1, 0.5, 1)]">
